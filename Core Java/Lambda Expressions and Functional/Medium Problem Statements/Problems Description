@@ -1,0 +1,66 @@
+🧩 1. String Filter Using Predicate
+Objective: Use Predicate<String> to filter a list of strings that start with a specific letter.
+
+Tasks:
+
+Create a list of strings.
+
+Use a lambda to filter strings that start with "A".
+
+Print the filtered list.
+
+🧩 2. Employee Salary Bonus Calculator
+Objective: Use a custom functional interface to apply different bonus rules.
+
+Tasks:
+
+Create an interface BonusCalculator with double calculate(double salary).
+
+Apply 10%, 15%, and 20% bonus rules using lambdas.
+
+Test with employee salaries and print new totals.
+
+🧩 3. Number List Operations with Streams
+Objective: Use streams to perform operations on a list of integers.
+
+Tasks:
+
+Generate a list of numbers 1 to 20.
+
+Use streams and lambdas to:
+
+Filter even numbers
+
+Square them
+
+Sum them
+
+🧩 4. Custom Comparator with Lambda
+Objective: Sort a list of custom objects using a lambda.
+
+Tasks:
+
+Create a Person class with name and age.
+
+Create a list of Person objects.
+
+Sort the list by age using a lambda.
+
+Then sort by name.
+
+🧩 5. Functional Interface for String Manipulation
+Objective: Create a StringOperation functional interface.
+
+Tasks:
+
+Define String apply(String str).
+
+Use lambdas to:
+
+Convert to uppercase
+
+Reverse a string
+
+Remove vowels
+
+Apply each operation to a sample string.

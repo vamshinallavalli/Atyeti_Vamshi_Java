@@ -1,0 +1,58 @@
+🔸 Problem 1: Filter Even Numbers
+Objective: Use a Predicate<Integer> to filter even numbers from a list.
+
+Instructions:
+
+Create a list of integers from 1 to 10.
+
+Use a lambda expression with a Predicate to check if a number is even.
+
+Print only even numbers using stream().filter(...).
+
+🔸 Problem 2: String Uppercase Formatter
+Objective: Use a Function<String, String> to convert strings to uppercase.
+
+Instructions:
+
+Create a list of strings like ["apple", "banana", "cherry"].
+
+Use a lambda with Function<String, String> to convert each to uppercase.
+
+Print the transformed list.
+
+🔸 Problem 3: Print Custom Greetings
+Objective: Use a Consumer<String> to print a greeting message.
+
+Instructions:
+
+Create a lambda that takes a name and prints "Hello, [name]!".
+
+Call the lambda for names like "Alice", "Bob", and "Charlie".
+
+🔸 Problem 4: Generate Random Numbers
+Objective: Use a Supplier<Integer> to generate random numbers.
+
+Instructions:
+
+Create a lambda that returns a random integer between 1 and 100.
+
+Print 5 random numbers using this lambda.
+
+🔸 Problem 5: Custom Functional Interface
+Objective: Create your own functional interface and implement it using a lambda.
+
+Instructions:
+
+Define an interface Calculator with a method int operate(int a, int b).
+
+Use lambda expressions to implement:
+
+Addition
+
+Subtraction
+
+Multiplication
+
+Division
+
+Call each implementation with sample values and print results.
