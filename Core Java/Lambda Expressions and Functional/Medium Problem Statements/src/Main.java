@@ -3,5 +3,6 @@ public class Main {
         StringFilterUsingPredicate.stringFilter();
 
         NumberListOperationsWithStreams.operationsWithStreams();
+        CustomComparatorWithLambda.comparing();
     }
 }

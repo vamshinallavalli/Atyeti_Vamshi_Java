@@ -1,0 +1,27 @@
+Banking System
+Concepts: Classes, Objects, Inheritance, Polymorphism, Encapsulation, Exception Handling
+
+Classes and Methods:
+Account Class:
+
+Fields: accountId, balance
+Methods: deposit(double amount), withdraw(double amount), getAccountId(), getBalance()
+Customer Class:
+
+Fields: customerId, name, accounts (list of Account)
+Methods: addAccount(Account account), removeAccount(Account account), getCustomerId(), getName(), getAccounts()
+Transaction Class:
+
+Fields: transactionId, account, amount, type
+Methods: processTransaction(), getTransactionId(), getAccount(), getAmount(), getType()
+SavingsAccount Class (inherits from Account):
+
+Fields: interestRate
+Methods: calculateInterest(), getInterestRate()
+CheckingAccount Class (inherits from Account):
+
+Fields: overdraftLimit
+Methods: checkOverdraft(), getOverdraftLimit()
+Exception Handling:
+
+Methods: handleInsufficientFundsException(), handleAccountNotFoundException()

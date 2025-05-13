@@ -1,0 +1,33 @@
+Step by Step Process:-
+
+Step 1: Define the Base Classes
+
+Book Class:
+
+Fields: title, author, ISBN, available
+Methods: borrow(), returnBook(), getTitle(), getAuthor(), getISBN(), isAvailable(), setAvailable(boolean available)
+Member Class:
+
+Fields: name, memberId
+Methods: borrowBook(Book book), returnBook(Book book), getName(), getMemberId()
+Librarian Class:
+
+Fields: name, employeeId
+Methods: addBook(Book book), removeBook(Book book), getName(), getEmployeeId()
+Step 2: Implement Inheritance for Different Types of Books
+EBook Class (inherits from Book):
+
+Fields: fileSize, format
+Methods: getFileSize(), getFormat()
+PrintedBook Class (inherits from Book):
+
+Fields: numberOfPages, coverType
+Methods: getNumberOfPages(), getCoverType()
+Step 3: Use Polymorphism to Handle Different Borrowing Rules
+Override borrow() Method in EBook and PrintedBook:
+Methods: borrow()
+Step 4: Encapsulate Data
+Ensure all fields are private and provide public getters and setters for accessing and modifying the fields.
+Step 5: Test the System
+Main Class:
+Methods: main(String[] args)
