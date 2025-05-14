@@ -1,3 +1,23 @@
+Goal: Understand what your system needs to do.
+
+Ask yourself:
+
+What should the system manage? (Books, Members, Borrowing, Returning, etc.)
+
+Who are the users? (Librarian, Member)
+
+What actions can each user perform?
+
+Let’s assume:
+
+Librarian can add/remove books, register members.
+
+Member can borrow and return books.
+
+Books can be of different types: EBook, PrintedBook.
+
+
+
 Step by Step Process:-
 
 Step 1: Define the Base Classes
