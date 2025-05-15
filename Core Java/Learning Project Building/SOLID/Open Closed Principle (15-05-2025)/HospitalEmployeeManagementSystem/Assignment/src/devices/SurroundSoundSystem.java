@@ -1,4 +1,6 @@
-public class SurroundSoundSystem implements RemoteControl{
+package devices;
+
+public class SurroundSoundSystem implements RemoteControl {
     @Override
     public void turningOn() {
         System.out.println("SurroundSoundSystem Turning On");
