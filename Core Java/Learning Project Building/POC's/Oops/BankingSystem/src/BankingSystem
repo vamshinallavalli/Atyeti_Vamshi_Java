@@ -1,27 +1,33 @@
-Banking System
-Concepts: Classes, Objects, Inheritance, Polymorphism, Encapsulation, Exception Handling
+Your application should do the following:
 
-Classes and Methods:
-Account Class:
+-> Read a .csv file of names, social security numbers, account type, and initial deposit
+-> Use a proper ds to hold all these accounts
+-> Both savings and checking accounts share the following properties:
 
-Fields: accountId, balance
-Methods: deposit(double amount), withdraw(double amount), getAccountId(), getBalance()
-Customer Class:
+deposit()
+withdraw()
+transfer()
+showInfo()
 
-Fields: customerId, name, accounts (list of Account)
-Methods: addAccount(Account account), removeAccount(Account account), getCustomerId(), getName(), getAccounts()
-Transaction Class:
+11-Digit Account Number (generated with the following process: 1 or 2 depending on Savings or
+Checking, last two digits of SSN, unique 5-digit number, and random 3-digit number)
 
-Fields: transactionId, account, amount, type
-Methods: processTransaction(), getTransactionId(), getAccount(), getAmount(), getType()
-SavingsAccount Class (inherits from Account):
+-> Savings Account holders are given a Safety Deposit Box, identified by a 3-digit number and
+accessed with a 4-digit code
 
-Fields: interestRate
-Methods: calculateInterest(), getInterestRate()
-CheckingAccount Class (inherits from Account):
+-> Checking Account holders are assigned a Debit Card with a 12-digit number and 4-digit PIN
 
-Fields: overdraftLimit
-Methods: checkOverdraft(), getOverdraftLimit()
-Exception Handling:
+-> Both accounts will use an interface that determines the base interest rate..
+Savings accounts will use.25 points less than the base rate
 
-Methods: handleInsufficientFundsException(), handleAccountNotFoundException()
+->The ShowInfo method should reveal relevant account information as well as information
+specific to the Checking account or Savings account.
+
+Learning objectives:
+-> Learn to develop a robust application architecture
+-> Use when to use abstract classes and abstract methods
+-> Use an interface API to receive information from a developer's application
+-> Explore constructors deeper and use the super() keyword
+-> Explore access modifiers and when to use public, private, or protected
+-> Read data from a file and store in an appropriate data structure
+-> Generate random numbers and work with String API
