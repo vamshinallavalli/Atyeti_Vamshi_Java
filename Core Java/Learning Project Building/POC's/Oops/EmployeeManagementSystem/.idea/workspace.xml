@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca40adde-cb34-41ab-88b4-5f585339e13e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BankingSystem/src/bankaccountapp/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BankingSystem/src/bankaccountapp/BankAccountApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BankingSystem/src/bankaccountapp/Checking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BankingSystem/src/bankaccountapp/IBaseRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BankingSystem/src/bankaccountapp/Savings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SOLID/Dependency Inversion Principle (16-05-2025)/ManufacturingProcess/src/GeneraManufacturingProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SOLID/Dependency Inversion Principle (16-05-2025)/ManufacturingProcess/src/LaptopManufacturingProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SOLID/Dependency Inversion Principle (16-05-2025)/ManufacturingProcess/src/SmartphoneManufacturingProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystem/src/BankingSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystem/src/BankingSystem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystem/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeManagementSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/Library Management System.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/EBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/LibraryManagementSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/PrintedBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library Management System/src/libratian.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vamshinallavalli"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git",
+    "accountId": "ea43ae32-0471-41b9-8d82-224f24842caa"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2xIb0s4MqZQOFvThdg2k6TqyJuY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Daily_Update/Core Java/Learning Project Building/POC's/Oops/EmailAdministrationApplication"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca40adde-cb34-41ab-88b4-5f585339e13e" name="Changes" comment="" />
+      <created>1747628314608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747628314608</updated>
+    </task>
+    <servers />
+  </component>
+</project>
