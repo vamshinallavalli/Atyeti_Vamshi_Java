@@ -1,0 +1,27 @@
+School Management System
+Concepts: Classes, Objects, Inheritance, Polymorphism, Encapsulation, Collections
+
+Classes and Methods:
+Student Class:
+
+Fields: studentId, name, courses (list of Course)
+Methods: enrollCourse(Course course), dropCourse(Course course), getStudentId(), getName(), getCourses()
+Teacher Class:
+
+Fields: teacherId, name, courses (list of Course)
+Methods: assignCourse(Course course), removeCourse(Course course), getTeacherId(), getName(), getCourses()
+Course Class:
+
+Fields: courseId, title, students (list of Student)
+Methods: addStudent(Student student), removeStudent(Student student), getCourseId(), getTitle(), getStudents()
+OnlineCourse Class (inherits from Course):
+
+Fields: platform
+Methods: getPlatform(), setPlatform(String platform)
+OnsiteCourse Class (inherits from Course):
+
+Fields: location
+Methods: getLocation(), setLocation(String location)
+Collections:
+
+Methods: manageStudentList(), manageCourseList()
