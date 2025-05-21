@@ -18,7 +18,7 @@ public class JDBCConnection {
 
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
-                System.out.println(rs.getString(1) + " " + rs.getInt(2));
+                System.out.println("");
             }
 
         } catch (SQLException e) {
