@@ -21,7 +21,7 @@ public class Main{
 
         List<Log> logsData= FileUtil.readData(directoryPath);
 
-//        //System.out.println(logsData);
+          //System.out.println(logsData);
 //        System.out.println("Number of Objects Stored: "+logsData.size());
 
 
