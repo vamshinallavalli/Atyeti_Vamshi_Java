@@ -2,7 +2,6 @@ package com.atyeti.service;
 
 import com.atyeti.model.Log;
 
-import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

@@ -24,7 +24,7 @@ public class DBService {
 
     public void executeUserQuery(String query) throws SQLException {
         PreparedStatement statement= connection.prepareStatement(query);
-        statement.executeUpdate();
+        statement.execute();
         logger.info("Statement Executed!");
     }
 }

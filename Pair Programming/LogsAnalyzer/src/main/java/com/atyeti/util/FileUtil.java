@@ -4,8 +4,13 @@ import com.atyeti.model.Log;
 import java.io.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.logging.Logger;
 
 public class FileUtil {
@@ -20,9 +25,10 @@ public class FileUtil {
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             if (file.getName().endsWith(".log")) {
                 currentFile=readFile(file.getAbsolutePath());
-                if(!logs.containsAll(currentFile)) {
-                    logs.addAll(currentFile);
-                }
+//                if(!logs.containsAll(currentFile)) {
+//                    logs.addAll(currentFile);
+//                }
+                logs.addAll(currentFile);
             }
         }
         logger.info("SuccessFully Read all Files in Directory with .log extension!");
