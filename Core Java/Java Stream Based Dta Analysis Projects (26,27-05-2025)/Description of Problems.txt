@@ -1,0 +1,73 @@
+🔁 1. Transaction Reconciliation System (Banking Domain)
+Problem Statement:
+You are given two lists:
+List<Transaction> bankTransactions – actual transactions recorded by the bank.
+List<Transaction> customerTransactions – transactions recorded by the customer.
+Each Transaction contains transactionId, amount, date, and description.
+✅ Tasks:
+Find all transactions mismatched between the two lists (e.g., different amount, missing in one list).
+Group mismatches by reason: "Amount mismatch", "Missing in bank", "Missing in customer".
+Generate a Map<String, List<Transaction>> where key is reason, and value is list of mismatches.
+Concepts used: filter, groupingBy, map, collect, Optional, equals/hashCode
+-------------------------------------------------------------------------------------------------------
+🧠 2. Employee Hierarchy Analyzer (HR Domain)
+Problem Statement:
+Given a list of Employee objects, each having id, name, managerId, and salary, perform the following:
+Build a hierarchy tree (Manager -> List<Employee>).
+Find the total salary burden under each manager (including subordinates recursively).
+Identify all managers whose total team salary exceeds a given threshold.
+Concepts used: Recursive tree building using Map<Integer, List<Employee>>, Collectors.groupingBy, flatMap, recursion + streams.
+-------------------------------------------------------------------------------------------------------
+🏬 3. Product Catalog Analyzer (E-commerce Domain)
+Problem Statement:
+You have a large list of Product objects:
+javaCopyEditclass Product {
+    String category;
+    String brand;
+    double price;
+    int unitsSold;
+}
+✅ Tasks:
+For each category, find the top 3 brands by total revenue (price × unitsSold).
+Output: Map<String, List<String>> where key = category, value = top 3 brands.
+Concepts used: groupingBy, collectingAndThen, comparing, limit, sorted, map
+--------------------------------------------------------------------------------------------------------
+📊 4. Customer Feedback Insight Engine
+Problem Statement:
+You have a list of Feedback:
+javaCopyEditclass Feedback {
+    String customerId;
+    int rating; // 1 to 5    String comments;
+}
+✅ Tasks:
+Classify customers based on their average rating: Positive (4-5), Neutral (3), Negative (1-2)
+Count how many customers fall into each category.
+Generate a map: Map<String, Long> where key = category, value = count.
+Concepts used: Collectors.groupingBy, Collectors.averagingInt, Collectors.counting, custom classifier
+--------------------------------------------------------------------------------------------------------
+📆 5. Log File Analyzer (DevOps/Logging)
+Problem Statement:
+You're given a list of logs:
+javaCopyEditclass LogEntry {
+    String serviceName;
+    LocalDateTime timestamp;
+    LogLevel level; // INFO, WARN, ERROR    String message;
+}
+✅ Tasks:
+Count number of ERROR logs per service per day.
+Sort each service's logs by time and group them by LogLevel.
+Identify services with more than 10 ERRORs on any day.
+Concepts used: groupingBy, partitioningBy, toMap, filter, map, LocalDate
+💳 6. Credit Card Fraud Detection
+Problem Statement:
+You are given a list of credit card transactions. Each transaction contains:
+javaCopyEditclass CreditCardTransaction {
+    String cardNumber;
+    LocalDateTime timestamp;
+    double amount;
+    String merchant;
+}
+✅ Tasks:
+Detect cards with more than 5 transactions within 2 minutes.
+Identify merchants with unusually high average transaction values.
+Concepts used: groupingBy, filter, Collectors.averagingDouble, sliding windows (custom logic), sorted
