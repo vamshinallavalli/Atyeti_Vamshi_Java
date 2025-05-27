@@ -1,6 +1,7 @@
 package com.atyeti;
 
-import com.atyeti.model.Transaction;
+
+import com.atyeti.pojo.Transaction;
 import com.atyeti.service.TransactionReconciliationService;
 
 import java.time.LocalDate;

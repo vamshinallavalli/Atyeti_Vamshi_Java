@@ -1,6 +1,6 @@
 package com.atyeti.service;
 
-import com.atyeti.model.Transaction;
+import com.atyeti.pojo.Transaction;
 import com.atyeti.util.TransactionMismatchReason;
 
 import java.util.ArrayList;
