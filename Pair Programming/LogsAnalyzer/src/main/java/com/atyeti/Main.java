@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Main{
-    private static final String directoryPath="C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Vamshi_Java\\Pair Programming\\LogsAnalyzer\\src\\main\\resources";
+    public static final String directoryPath="C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Vamshi_Java\\Pair Programming\\LogsAnalyzer\\src\\main\\resources";
     private static final LogService logService=new LogService();
     private static final DBService dbService=new DBService();
 

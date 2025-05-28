@@ -3,6 +3,7 @@ package com.atyeti.util;
 import com.atyeti.model.Log;
 import java.io.*;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -11,7 +12,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+
+import static com.atyeti.Main.directoryPath;
 
 public class FileUtil {
 
@@ -36,25 +40,39 @@ public class FileUtil {
     }
 
     private static List<Log> readFile(String absolutePath) {
-        List<Log> list=new ArrayList<>();
-        try(BufferedReader reader=new BufferedReader(new FileReader(absolutePath))){
-            String line="";
+        List<Log> listOfLogs = new ArrayList<>();
 
-            while((line=reader.readLine())!=null){
-                Log log=new Log();
-                String[] data = line.split(",");
-                log.setTimestamp(Timestamp.valueOf(data[0]));
-                log.setUserId(Long.parseLong(data[1]));
-                log.setMessageType(data[2]);
-                log.setMessage(data[3]);
-                list.add(log);
+        try (BufferedReader reader = new BufferedReader(new FileReader(absolutePath));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(directoryPath + "log4.log"))) {
+
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                String[] data = line.split(" - ", 3);
+
+                String timestampWithMillis = data[0];
+                String[] timestampParts = timestampWithMillis.split(",");
+
+                String timestampStr = timestampParts[0];
+                long uniqueId = Long.parseLong(timestampParts[1]);
+
+                Log log = new Log();
+                log.setOriginalTimestamp(timestampWithMillis);
+                log.setUserId(uniqueId);
+                log.setMessageType(data[1]);
+                log.setMessage(data[2]);
+
+                listOfLogs.add(log);
+
+                writer.write(line);
+                writer.newLine();
             }
 
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        return list;
+        return listOfLogs;
     }
+
 }

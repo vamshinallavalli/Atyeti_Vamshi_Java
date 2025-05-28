@@ -62,4 +62,15 @@ public class Log {
                 ", messageType='" + messageType + '\'' +
                 "}\n";
     }
+
+    private String originalTimestamp;
+
+    public String getOriginalTimestamp() {
+        return originalTimestamp;
+    }
+
+    public void setOriginalTimestamp(String originalTimestamp) {
+        this.originalTimestamp = originalTimestamp;
+    }
+
 }
