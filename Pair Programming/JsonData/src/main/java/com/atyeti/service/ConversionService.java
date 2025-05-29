@@ -1,83 +1,72 @@
 package com.atyeti.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import static com.atyeti.Main.FILE_PATH;
 
 public class ConversionService {
 
-   public static void readAndChange() throws IOException {
+    public static void readAndChange() throws IOException {
 
-       ObjectMapper objectMapper = new ObjectMapper();
+        // Reader
+        FileReader reader = new FileReader(FILE_PATH);
+        JsonObject jsonObject = JsonParser.parseReader(reader).getAsJsonObject();
+        reader.close();
 
-       // Read JSON from file
-       JsonNode jsonNode = objectMapper.readTree(new File(FILE_PATH));
+        // Before Change
+        System.out.println("Original JSON: " + jsonObject);
 
-       // Print JSON in pretty format
-       String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
+         // name inside each department array & name inside each team inside each department array
 
-       System.out.println(prettyJson);
+        if (jsonObject.has("departments")) {
+            jsonObject.getAsJsonArray("departments").forEach(deptElement -> {
+                JsonObject department = deptElement.getAsJsonObject();
 
-       if(jsonNode.has("name")){
-           
-       }
-   }
+                if (department.has("name")) {
+                    String oldName = department.get("name").getAsString();
+                    department.addProperty("name", oldName + " Dept (new) ");
+                }
+
+                // Updating each team name inside the department array
+                if (department.has("teams")) {
+                    department.getAsJsonArray("teams").forEach(teamElement -> {
+                        JsonObject team = teamElement.getAsJsonObject();
+
+                        if (team.has("name")) {
+                            String oldTeamName = team.get("name").getAsString();
+                            team.addProperty("name", "Team - " + oldTeamName);
+                        }
+                    });
+                }
+            });
+        }
+
+
+        //  name inside each project array
+
+        if (jsonObject.has("projects")) {
+            jsonObject.getAsJsonArray("projects").forEach(projectElement -> {
+                JsonObject project = projectElement.getAsJsonObject();
+
+                if (project.has("name")) {
+                    String oldProjectName = project.get("name").getAsString();
+                    project.addProperty("name", oldProjectName + " Project");
+                }
+            });
+        }
+
+        // After Change
+        System.out.println("Modified JSON: " + jsonObject);
+
+        // Writer
+        FileWriter writer = new FileWriter(FILE_PATH);
+        writer.write(jsonObject.toString());
+        writer.flush();
+        writer.close();
+
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        try {
-//            // Reader
-//            FileReader reader = new FileReader(FILE_PATH);
-//            JsonObject jsonObject = JsonParser.parseReader(reader).getAsJsonObject();
-//            reader.close();
-//
-//        // Before Change
-//            System.out.println("Original JSON: " + jsonObject);
-//
-//            // Change city to "Hyderabad" under "location"
-//            if (jsonObject.has("location")) {
-//                JsonObject location = jsonObject.getAsJsonObject("location");
-//                if (location.has("city")) {
-//                    location.addProperty("city", "Hyderabad");
-//                }
-//            }
-//
-//
-//            if(jsonObject.has("department")){
-//                JsonObject name=jsonObject.getAsJsonObject("Engineering");
-//                name.addProperty("name","CSE");
-//            }
-//
-//            // After Change
-//            System.out.println("Modified JSON: " + jsonObject);
-//
-//            // Writer
-//            FileWriter writer = new FileWriter(FILE_PATH);
-//            writer.write(jsonObject.toString());
-//            writer.flush();
-//            writer.close();
-//
-//            System.out.println("JSON file updated successfully!");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }

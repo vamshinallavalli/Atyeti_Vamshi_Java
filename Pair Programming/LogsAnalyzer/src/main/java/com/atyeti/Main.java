@@ -4,7 +4,6 @@ import com.atyeti.model.Log;
 import com.atyeti.service.DBService;
 import com.atyeti.service.LogService;
 import com.atyeti.util.FileUtil;
-
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
