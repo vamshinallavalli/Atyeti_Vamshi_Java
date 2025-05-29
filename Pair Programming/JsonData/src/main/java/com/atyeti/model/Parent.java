@@ -3,7 +3,7 @@ package com.atyeti.model;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class JsonFile{
+public class Parent{
 
 	@JsonProperty("settings")
 	private Settings settings;
@@ -22,6 +22,9 @@ public class JsonFile{
 
 	@JsonProperty("services")
 	private String services;
+
+	@JsonProperty("CEO")
+	private String cEO;
 
 	@JsonProperty("technologies")
 	private Technologies technologies;
@@ -47,6 +50,7 @@ public class JsonFile{
 	@JsonProperty("announcements")
 	private Announcements announcements;
 
+
 	public Settings getSettings(){
 		return settings;
 	}
@@ -69,6 +73,10 @@ public class JsonFile{
 
 	public String getServices(){
 		return services;
+	}
+
+	public String getCEO(){
+		return cEO;
 	}
 
 	public Technologies getTechnologies(){

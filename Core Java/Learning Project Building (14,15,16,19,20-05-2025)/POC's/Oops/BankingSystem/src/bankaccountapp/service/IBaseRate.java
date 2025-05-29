@@ -1,4 +1,4 @@
-package bankaccountapp;
+package bankaccountapp.service;
 
 public interface IBaseRate {
 }
