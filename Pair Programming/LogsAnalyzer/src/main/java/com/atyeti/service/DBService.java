@@ -12,7 +12,7 @@ public class DBService {
 
     private static final Logger logger=Logger.getLogger(DBService.class.getName());
 
-    public void createConnection(String url,String name,String password){
+    public static void createConnection(String url,String name,String password){
         try {
             connection= DriverManager.getConnection(url,name,password);
             logger.info("Connection Established!");
@@ -22,7 +22,7 @@ public class DBService {
         }
     }
 
-    public void executeUserQuery(String query) throws SQLException {
+    public static void executeUserQuery(String query) throws SQLException {
         PreparedStatement statement= connection.prepareStatement(query);
         statement.execute();
         logger.info("Statement Executed!");
