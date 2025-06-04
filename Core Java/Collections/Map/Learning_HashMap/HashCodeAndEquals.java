@@ -5,10 +5,12 @@ import java.util.Objects;
 
 public class HashCodeAndEquals {
     public static void main(String[] args) {
-        HashMap<Student,String> map=new HashMap<>();
+
         Student s1=new Student("Raja",1);
         Student s2=new Student("Arjun",2);
         Student s3=new Student("Raja",1);
+
+        HashMap<Student,String> map=new HashMap<>();
 
         map.put(s1,"Engineer"); // hashcode --> index
         map.put(s2,"Designer");
