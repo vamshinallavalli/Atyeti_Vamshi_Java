@@ -1,5 +1,4 @@
 public class MaximumIndex {
-    
 }
 /*
 Maximum Index
