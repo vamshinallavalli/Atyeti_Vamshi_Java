@@ -1,0 +1,8 @@
+Collector	Description
+groupingBy(classifier)	Group items by a key
+partitioningBy(predicate)	Split into true/false buckets
+mapping(mapper, downstream)	Transform items before collecting
+collectingAndThen(downstream, finisher)	Post-process collected result
+toMap(k, v, mergeFn)	Collect into map with key collisions handled
+summarizingInt(...)	Get count, sum, min, max, average
+joining(delimiter)	Join strings with delimiter
