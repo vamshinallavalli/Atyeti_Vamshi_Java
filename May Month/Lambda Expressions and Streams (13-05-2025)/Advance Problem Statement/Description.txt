@@ -1,0 +1,77 @@
+🔹 Q1. Group Names by First Letter
+
+List<String> names = Arrays.asList("Alice", "Bob", "Ankit", "Bala");
+✅ Task: Group names by their first letter.
+📌 Result: {A=[Alice, Ankit], B=[Bob, Bala]}
+📘 Use groupingBy
+
+🔹 Q2. Count Occurrence of Each Character in a String
+
+String input = "banana";
+✅ Task: Count how many times each character appears.
+📘 Use chars(), mapToObj, and Collectors.groupingBy + counting()
+
+🔹 Q3. Flatten a List of Lists
+
+List<List<String>> list = Arrays.asList(
+  Arrays.asList("a", "b"),
+  Arrays.asList("c", "d")
+);
+✅ Task: Convert to ["a", "b", "c", "d"]
+📘 Use flatMap
+
+🔹 Q4. Group Employees by Department and Get Names
+
+class Employee {
+    String name;
+    String department;
+    // constructor/getters
+}
+✅ Task: Map department → list of employee names
+📘 Use groupingBy + mapping
+
+🔹 Q5. Get Total Salary Per Department
+
+class Employee {
+    String department;
+    double salary;
+}
+✅ Task: Map department → total salary
+📘 Use groupingBy + summingDouble
+
+🔹 Q6. Get Top Scorer in Each Subject
+
+class Student {
+    String name;
+    String subject;
+    int marks;
+}
+✅ Task: Map subject → student with highest marks
+📘 Use groupingBy + maxBy + collectingAndThen
+
+🔹 Q7. Convert List to Map (key: string, value: length)
+
+List<String> list = Arrays.asList("java", "python", "js");
+✅ Task: Map each string to its length
+📘 Use Collectors.toMap
+
+🔹 Q8. Partition People by Age > 18
+
+class Person {
+    String name;
+    int age;
+}
+✅ Task: Partition list into minors and adults
+📘 Use partitioningBy
+
+🔹 Q9. Get the Longest Word
+
+List<String> words = Arrays.asList("hello", "world", "java", "streams");
+✅ Task: Find the longest word
+📘 Use max(Comparator.comparingInt(String::length))
+
+🔹 Q10. Get Average Word Length in a Sentence
+
+String sentence = "Java streams are powerful and concise";
+✅ Task: Get average length of all words
+📘 Use split(), stream, mapToInt, and average()
