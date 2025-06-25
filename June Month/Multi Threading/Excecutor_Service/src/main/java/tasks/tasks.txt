@@ -1,0 +1,28 @@
+Task 1: Print Numbers Using Multiple Threads
+Goal: Create two threads — one prints even numbers, the other prints odd numbers — in sequence from 1 to 10.
+
+🔸 Concepts Used: Thread class, synchronized, wait(), notify()
+
+
+Task 2: Producer-Consumer Using wait/notify
+Goal: Implement a classic Producer-Consumer problem using a bounded buffer (e.g., queue size of 5).
+
+🔸 Concepts Used: wait(), notifyAll(), synchronized, thread communication
+
+
+Task 3: File Word Counter Using Thread Pool
+Goal: Count the number of words in multiple text files using a thread pool.
+
+🔸 Concepts Used: ExecutorService, Callable, Future, file I/O
+
+
+Task 4: Deadlock Simulation
+Goal: Simulate a deadlock between two threads accessing two shared resources.
+
+🔸 Concepts Used: Thread synchronization, deadlock detection (for learning)
+
+
+ Task 5: Parallel Array Sum
+Goal: Divide an array into chunks and use multiple threads to calculate the total sum in parallel.
+
+🔸 Concepts Used: Callable, Future, concurrency, parallel computing

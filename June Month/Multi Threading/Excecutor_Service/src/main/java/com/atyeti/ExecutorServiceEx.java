@@ -1,10 +1,11 @@
 package com.atyeti;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ExecutorServiceEx {
     public static void main(String[] args) {
-        java.util.concurrent.ExecutorService executor = Executors.newFixedThreadPool(5);
+        ExecutorService executor = Executors.newFixedThreadPool(50);
         executor.submit(() -> System.out.println(ExecutorServiceEx.count()));
         executor.shutdown();
 
