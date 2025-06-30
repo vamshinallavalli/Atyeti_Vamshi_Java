@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]" date="1748323847574" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 27-05-2025 11:00 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Core Java/Collections/out/production/Collections/Learning_HashMap/Student.class" />
+    <option name="AFTER_PATH" value="Core Java/Collections (21, 22, 23-05-2025)/out/production/Collections/Learning_HashMap/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Core Java/Collections/out/production/Collections/Learning_HashMap/Example.class" />
+    <option name="AFTER_PATH" value="Core Java/Collections (21, 22, 23-05-2025)/out/production/Collections/Learning_HashMap/Example.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/Example.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Core Java/Collections/out/production/Collections/Learning_HashMap/HashMapDemo.class" />
+    <option name="AFTER_PATH" value="Core Java/Collections (21, 22, 23-05-2025)/out/production/Collections/Learning_HashMap/HashMapDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/HashMapDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Core Java/Collections/out/production/Collections/Learning_HashMap/Hash.class" />
+    <option name="AFTER_PATH" value="Core Java/Collections (21, 22, 23-05-2025)/out/production/Collections/Learning_HashMap/Hash.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/Hash.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Core Java/Collections/out/production/Collections/Learning_HashMap/HashCodeAndEquals.class" />
+    <option name="AFTER_PATH" value="Core Java/Collections (21, 22, 23-05-2025)/out/production/Collections/Learning_HashMap/HashCodeAndEquals.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-05-2025_11_00_[Changes]/HashCodeAndEquals.class" />
+  </binary>
+</changelist>
