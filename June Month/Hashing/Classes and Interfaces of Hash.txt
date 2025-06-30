@@ -1,0 +1,19 @@
+Class / Interface	                                   Package	                             Description
+
+HashMap<K, V>	                                      java.util	                        Hash table map implementation
+
+Hashtable<K, V>	                                      java.util	                        Legacy synchronized hash map
+
+HashSet<E>	                                          java.util	                        Set backed by HashMap
+
+LinkedHashMap<K, V>	                                  java.util	                        Hash map with insertion order
+
+LinkedHashSet<E>	                                  java.util	                        Hash set with insertion order
+
+ConcurrentHashMap<K, V>	                              java.util.concurrent	            Thread-safe hash map
+
+Map<K, V>	                                          java.util	                        Interface for maps
+
+Set<E>	                                              java.util	                        Interface for sets
+
+Object.hashCode()	                                  java.lang	                        Base method for hash calculation
