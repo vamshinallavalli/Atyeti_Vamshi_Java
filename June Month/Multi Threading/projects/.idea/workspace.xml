@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff1ca543-3450-4638-92ac-8c4076f37123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/model/LogStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/service/FileReaderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/service/LogAnalyzerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/util/LogFileFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/LogFileAnalyzerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logslog4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projects/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projects/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projects/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projects/com/atyeti/LogFileAnalyzerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projects/pom.xml" beforeDir="false" />
+    <list default="true" id="ff1ca543-3450-4638-92ac-8c4076f37123" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server5.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server7.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/server9.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/service/LogAnalyzerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/logs/logs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/model/LogStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/LogFileAnalyzerSystem/src/main/java/com/atyeti/model/LogStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/src/main/java/com/atyeti/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/src/main/java/com/atyeti/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/src/main/java/com/atyeti/logs/logs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/src/main/java/com/atyeti/model/LogStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/src/main/java/com/atyeti/model/LogStats.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +75,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Atyeti_Vamshi_Java/June Month/Multi Threading/projects",
+    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Practice/Log_Analyzer",
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
   }
 }]]></component>
@@ -84,6 +93,19 @@
       <option name="presentableId" value="Default" />
       <updated>1750913183538</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <option name="closed" value="true" />
+      <created>1750934046792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750934046792</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
