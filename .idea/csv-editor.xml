@@ -3,6 +3,20 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\June Month\Multi Threading\projects\Transaction Reconciliation System\src\main\resources\BankTransactions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June Month\Multi Threading\projects\Transaction Reconciliation System\src\main\resources\CustomerTransactions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\May Month\Learning Project Building (14,15,16,19,20-05-2025)\BankingSystem\NewBankAccounts (1).csv">
           <value>
             <Attribute>
