@@ -48,31 +48,47 @@ public class BankingApp {
                         while (true) {
                             System.out.println("\n1.Deposit 2.Withdraw 3.Balance 4.Transactions 5.Logout");
                             int op = sc.nextInt();
+
                             switch (op) {
-                                case 1 -> {
+                                case 1:
                                     System.out.print("Amount: ");
                                     txnService.deposit(user, sc.nextDouble());
-                                }
-                                case 2 -> {
+                                    break;
+
+                                case 2:
                                     System.out.print("Amount: ");
                                     txnService.withdraw(user, sc.nextDouble());
-                                }
-                                case 3 -> txnService.checkBalance(user);
-                                case 4 -> txnService.showTransactions(user);
-                                case 5 -> {
+                                    break;
+
+                                case 3:
+                                    txnService.checkBalance(user);
+                                    break;
+
+                                case 4:
+                                    txnService.showTransactions(user);
+                                    break;
+
+                                case 5:
                                     System.out.println("Logged out.");
                                     break;
-                                }
-                                default -> System.out.println("Invalid.");
+
+                                default:
+                                    System.out.println("Invalid.");
                             }
+
                             if (op == 5) break;
                         }
-                    } else System.out.println("Invalid credentials.");
+                    } else {
+                        System.out.println("Invalid credentials.");
+                    }
                     break;
 
                 case 3:
                     System.out.println("Thank you!");
                     return;
+
+                default:
+                    System.out.println("Invalid choice.");
             }
         }
     }
