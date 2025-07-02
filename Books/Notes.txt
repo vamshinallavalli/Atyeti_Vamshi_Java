@@ -1,0 +1,224 @@
+---------------------OOPS------------------------------
+Object-Oriented Programming (OOP) is a programming paradigm that is widely used to design complex software systems. Unlike functional programming, which is suitable for smaller, simpler tasks, OOP helps manage complexity by organizing software around objects and classes. This article will explain the basic concepts of OOP in Java, how it differs from functional programming, and provide an example of when to use OOP.
+
+What is Object-Oriented Programming (OOP)?
+Object-Oriented Programming (OOP) is a way of structuring your software by organizing it into objects. These objects interact with one another and share common functionality. Two key concepts of OOP are classes and objects.
+
+Class: A class is essentially a blueprint for creating objects. It defines the attributes (data members) and the behaviors (methods) that the objects of that class will have. In Java, a class can contain both data (variables) and functions (methods) that define the behavior of objects.
+Object: An object is an instance of a class. Just as variables are instances of primitive data types (e.g., int, float, char), objects are instances of a class. For example, if you have a Car class, each individual car (object) you create from that class will have specific attributes like color, brand, and model.
+Functional Programming vs. Object-Oriented Programming
+In Java, you can program in both functional programming style and object-oriented programming style. Both paradigms are supported by the language, but they are suited for different kinds of tasks.
+
+Functional Programming: This style of programming focuses on writing functions that take input, perform some computations, and return an output. It is great for simple, small tasks such as automation scripts or basic computations. Functional programming works well when there are only a few pieces of logic and little interaction between different parts of the program.
+Object-Oriented Programming: OOP becomes particularly useful when building larger, more complex systems. If your program needs to model real-world entities with attributes and behaviors, and these entities interact with each other in a meaningful way, OOP is the preferred approach. For example, in a software system for managing students and teachers, where entities like students, teachers, and subjects need to interact, OOP is the more efficient and scalable way to organize the system.
+Why OOP is Preferred for Complex Systems
+Imagine you are building software for a university. You need to manage students, teachers, and subjects. Each student has attributes such as their name, the subjects they are enrolled in, and their grades. Each teacher has a name and a list of subjects they teach. Each subject has its own name and weightage, which influences the grading of students.
+
+In a functional programming approach, managing these relationships could quickly become complicated. It would involve creating multiple functions that manipulate data structures directly, which can lead to tangled, hard-to-maintain code.
+
+With OOP, you can represent students, teachers, and subjects as objects, each encapsulating their own data and methods for interacting with other objects. For example:
+
+A Student object could have attributes like name, subjects, and grades, and methods like addSubject() and calculateGrade().
+A Teacher object could have attributes like name and subjectsTaught, and methods like assignGrade() or teachSubject().
+A Subject object could have attributes like name and weightage, and methods like assignGradeToStudent().
+This approach allows you to design a system that mirrors real-world entities and their interactions, making the software easier to understand, extend, and maintain.
+
+
+Advantages of Object-Oriented Programming
+Modularity: Code is organized into classes, making it easier to understand and maintain.
+Reusability: Classes can be reused in other programs or projects.
+Scalability: OOP makes it easy to extend software by adding new classes or functionalities.
+Error Reduction: Encapsulation and abstraction help prevent invalid states and reduce errors.
+
+-----------------------------------------------------------------------------
+Encapsulation is one of the fundamental concepts in object-oriented programming (OOP), and it plays a vital role in Java to ensure code maintainability, consistency, and security.
+
+Advantages of Encapsulation
+1. Improved Maintainability: Changes to internal implementation do not affect external users.
+
+2. Consistency: Encapsulation ensures consistent validation and modification of fields. For example, in a Student class:
+
+
+class Student {
+    private int marks;
+
+    public void setMarks(int marks) {
+        if (marks < 0 || marks > 100) {
+            throw new IllegalArgumentException("Marks should be between 0 and 100");
+        }
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+
+By making marks private and providing a setter with validation, we ensure that only valid values are assigned.
+
+3. Code Reusability: Rules and validations are centralized, reducing redundancy. For instance, email validation can be implemented in a single setter method:
+
+
+class Student {
+    private String email;
+
+    public void setEmail(String email) {
+        if (!email.contains("@") || !email.contains(".")) {
+            throw new IllegalArgumentException("Invalid email address");
+        }
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+}
+
+
+4. Security: Sensitive data is protected from unauthorized access or modification.
+
+Apart from data hiding, encapsulation also refers to the bundling of data and methods within a class. This ensures that each class has its own well-defined functionality and scope, promoting modularity.
+
+
+----------------------------------------------------------------------
+Inheritance in Java
+Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class.
+
+
+Why Is Java Inheritance Important?
+Implements is-a relationship: It represents a hierarchical relationship between classes. For example, a SalesEmp is-a Employee.
+Code Reusability: The code written in the Superclass is common to all subclasses. Child classes can directly use the parent class code.
+Polymorphism via Method Overriding: Inheritance enables runtime polymorphism, where subclasses can override methods from the superclass to provide specific behavior.
+Abstract Classes and Interfaces: Inheritance facilitates abstraction. Using abstract classes and interfaces, you can define behavior in a superclass without specifying the implementation, leaving it to the subclasses.
+
+
+----------------------------------------------------------------------------
+Polymorphism with Examples
+The word ‘polymorphism’ means ‘having many forms’. In Java, polymorphism refers to the ability of a message to be displayed in more than one form. This concept is a key feature of Object-Oriented Programming and it allows objects to behave differently based on their specific class type.
+
+Types of Polymorphism in Java
+There are two types of polymorphism in Java:
+
+Compile-time polymorphism
+Runtime polymorphism.
+
+Key Points About Method Overloading in Java
+Method Overloading Criteria:
+Overloading is achieved by changing the number of parameters or the data types of parameters. You can also use a mix of both.
+Method overloading cannot be done by changing only the return type.
+Automatic Type Conversion: If a method is called with an argument type that doesn’t exactly match, Java may automatically convert the type (if possible) to match the method’s signature. For example, if an int is passed to a method expecting a long, Java will convert it automatically.
+Ambiguity Avoidance: Java does not allow method overloading based solely on the return type because it could lead to ambiguity. For example, if two methods have the same signature but different return types, the compiler would not be able to decide which method to invoke.
+Operator Overloading (Not Allowed in Java): While languages like C++ allow operator overloading, Java does not support it. However, Java internally overloads operators like the + operator for string concatenation. For example:
+String s1 = "Hello ";
+String s2 = "World!";
+System.out.println(s1 + s2);  // Output: Hello World!
+
+Benefits of Method Overriding
+Flexibility: It allows the same method name to have different behaviors depending on the object that calls it.
+Simplified Code: Instead of writing separate methods for each type of object, you can override the same method in different subclasses and maintain cleaner code.
+Polymorphism: It is a fundamental feature of polymorphism, where the method call is resolved at runtime based on the object type, not the reference type.
+
+
+-----------------------------------------------------------------------------
+
+What is Abstraction?
+Abstraction allows you to define the structure of a system without providing all the implementation details. Instead, it focuses on the essential aspects, leaving the specific implementations to be handled in more specialized classes. This concept is often used in situations where the implementation of certain methods is unknown or needs to be different in subclasses.
+
+Abstract Classes and Interfaces in Java
+Java achieves abstraction primarily through abstract classes and interfaces.
+
+Abstract Classes:
+An abstract class can have both abstract methods (without implementation) and normal methods (with implementation). It serves as a blueprint for other classes.
+You cannot create instances of abstract classes directly, but you can create objects of classes that extend these abstract classes.
+Interfaces:
+An interface is similar to an abstract class, but all the methods in an interface are abstract by default. In recent Java versions, interfaces can also have default methods with implementation, but they still focus on defining behavior rather than implementation.
+Interfaces are often used to define common functionalities that can be shared across different classes.
+Both abstract classes and interfaces are powerful tools for achieving abstraction, each with its own use cases. Abstract classes are ideal when you have some common functionality shared by all subclasses, while interfaces are better suited for defining common behavior that can be implemented by classes from different hierarchies.
+
+
+Features of Interfaces
+Interfaces in Java have several important features:
+
+All members are public by default. Any method declared inside an interface is implicitly public.
+Data members are public, static, and final. All variables in an interface are by default public, static, and final, i.e., constants.
+All methods are abstract by default. Methods declared inside an interface are abstract unless marked as default or static.
+Default and Static methods are allowed. Interfaces can now contain concrete methods using default and static keywords.
+Multiple interface inheritance. A class can implement multiple interfaces, allowing for a form of multiple inheritance in Java.
+Interface inheritance. An interface can extend one or more interfaces.
+
+Example of Default and Static Methods in an Interface
+Java 8 introduced the ability to define default and static methods in interfaces. Default methods allow interfaces to provide some method implementations while still preserving backward compatibility. Static methods can be called on the interface itself, rather than on instances of the implementing class.
+
+Here’s an example demonstrating both:
+
+
+
+
+interface MyInt{
+    default void fun1(){
+        System.out.println("fun1()");
+    }
+    static void fun2(){
+        System.out.println("fun2()");
+    }
+    void fun3();
+​
+}
+ class Test implements MyInt{
+    public void fun3(){
+        System.out.println("fun3()");
+    }
+    public static void main(String[] args) {
+        Test t= new Test();
+        t.fun1();
+        MyInt.fun2();
+        t.fun3();
+    }
+}
+
+
+Explanation:
+
+The interface MyInt contains a default method fun1() and a static method fun2().
+The class Test implements MyInt and provides its own implementation for the abstract method fun3().
+In the main() method:
+fun1() is called on the instance t, and since it is a default method, it works just like a regular instance method.
+fun2() is a static method and is called on the interface itself using MyInt.fun2().
+fun3() is implemented in the class Test, and when called, it prints the respective message.
+Output:
+
+fun1()
+fun2()
+fun3()
+
+
+Abstract Classes vs Interfaces in Java
+---------------------------------------
+
+Feature                         | Abstract Class                             | Interface
+-------------------------------|--------------------------------------------|--------------------------------------------
+Constructors                    | Can have constructors.                     | Cannot have constructors.
+Data Members                    | Can have non-static, non-final data members.| All data members are public static final.
+Methods                         | Can have methods with any access modifier. | All methods are public by default.
+Inheritance                     | A class can extend only one abstract class.| A class can implement multiple interfaces.
+Multiple Inheritance            | Not supported (no multiple class inheritance).| Supported (an interface can extend multiple interfaces).
+Implementation                  | Can implement interfaces and extend classes.| Can only extend other interfaces.
+Access Modifiers for Methods    | Can have private, protected, or default.   | Methods are public by default.
+Non-abstract Methods            | Can have regular (non-abstract) methods.   | Can have default and static methods.
+
+
+When to Use Abstract Classes?
+Abstract classes are typically used when:
+
+There is a logical "is-a" relationship between the classes. For example, Shape and Rectangle or Employee and SalesEmployee.
+You need protected, private, or default methods.
+You require non-static, non-final data members.
+When to Use Interfaces?
+Interfaces are ideal when:
+
+You need to provide a set of functionalities that can be implemented by unrelated classes. For example, a Comparable interface can be implemented by both a Student class and an Employee class to compare their IDs.
+You need multiple implementations for the same functionality.
+You need multiple inheritance, where an interface can extend multiple other interfaces.
+
+---------------------------------------------------------------------------------
