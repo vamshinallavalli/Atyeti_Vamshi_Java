@@ -5,6 +5,6 @@ import com.atyeti.model.Expense;
 import java.time.YearMonth;
 import java.util.List;
 
-interface IReportService {
+public interface IReportService {
     void generateMonthlyReport(List<Expense> expenses, YearMonth month);
 }
