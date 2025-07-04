@@ -30,9 +30,9 @@ public class ExpenseService implements IExpenseService{
         List<Expense> allExpenses = new ArrayList<>();
         for (Future<List<Expense>> future : futures) {
             try {
-                allExpenses.addAll(future.get()); // wait for each thread
+                allExpenses.addAll(future.get());
             } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace(); // log the error
+                e.printStackTrace();
             }
         }
 
@@ -49,7 +49,7 @@ public class ExpenseService implements IExpenseService{
             while ((line = reader.readLine()) != null) {
                 if (isFirstLine && line.startsWith("Amount")) {
                     isFirstLine = false;
-                    continue; // Skip CSV header
+                    continue;
                 }
 
                 String[] data = line.split(",", -1); // retain empty strings
