@@ -34,13 +34,13 @@ public class ReportService implements IReportService{
                 .min(Comparator.comparingDouble(Expense::getAmount));
 
         System.out.println("\n=== Monthly Expense Report: " + month + " ===");
-        System.out.printf("Total Spent: ₹\n", total);
-        System.out.printf("Average Daily Expense: ₹\n", avgPerDay);
+        System.out.printf("Total Spent: ₹%.2f\n", total);
+        System.out.printf("Average Daily Expense: ₹%.2f\n", avgPerDay);
         System.out.println("Most Expensive Entry: " + maxExpense.orElse(null));
         System.out.println("Least Expensive Entry: " + minExpense.orElse(null));
         System.out.println("\nBy Category:");
-        byCategory.entrySet().stream()
-                .forEach(entry -> System.out.println("Final: " + entry.getKey() + " ₹" + entry.getValue()));
+        byCategory.forEach((cat, amt) -> System.out.printf(" - %-12s : ₹%.2f\n", cat, amt));
+              //  .forEach(entry -> System.out.println("Final: " + entry.getKey() + " ₹" + entry.getValue()));
     }
 
 }
