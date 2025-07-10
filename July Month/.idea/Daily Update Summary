@@ -1,13 +1,25 @@
 What I Have Done Over the Last Few Days:
+-----------------------------------------------------------
 Explored Core Java Concepts in Depth:
 I completed a detailed study of Core Java with Advance Topics using GeeksforGeeks, where I also solved numerous coding problems.
 Course Certificate: https://media.geeksforgeeks.org/courses/certificates/4919f754c0f1f572172547e8c31fcaa6.pdf
 GeeksforGeeks Profile: https://www.geeksforgeeks.org/user/thevamshikrishna/
-
+------------------------------------------------------------
 Reviewed Loan IQ Documentation and Training Sessions:
 I studied various documents related to Loan IQ and attended knowledge-sharing sessions to understand the functional and technical aspects of the platform.
-
+------------------------------------------------------------
 Worked on Cloud Skills and Project Reviews:
 I used my remaining time to explore Google Cloud projects and complete hands-on labs and quests on Cloud Skills Boost.
 🔗 Google Cloud Profile
 https://www.cloudskillsboost.google/public_profiles/239d2192-a737-44e1-a22c-e563f0ffa99b
+------------------------------------------------------------
+Done a Expense Manager System Java Project
+url: https://github.com/vamshinallavalli/Atyeti_Vamshi_Java/tree/main/DAILY%20PROJECT/ExpenseManagerwithMonthlyReports
+
+Reviewed By Ai:
+✅ Summary
+Aspect	Rating
+SOLID Principles	⭐⭐⭐⭐☆ (4/5) – Great with small gaps in DIP/OCP
+Production Quality	⭐⭐⭐⭐☆ (4/5) – Clean, modular, can be hardened with DI, config, logging, testing
+Readability & Maintenance	⭐⭐⭐⭐⭐ (5/5) – Easy to read and extend
+Multithreading	✅ Production-safe (ExecutorService used correctly)
