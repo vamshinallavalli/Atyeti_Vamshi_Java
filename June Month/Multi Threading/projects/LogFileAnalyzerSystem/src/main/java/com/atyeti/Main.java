@@ -26,7 +26,7 @@ public class Main {
         }
 
         LogAnalyzerService analyzer = new LogAnalyzerService(new FileReaderService());
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         List<Future<LogStats>> futureList = new ArrayList<>();
 
