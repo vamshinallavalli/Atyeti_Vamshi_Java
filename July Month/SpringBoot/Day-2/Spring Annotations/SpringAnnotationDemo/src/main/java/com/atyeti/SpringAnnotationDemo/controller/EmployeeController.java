@@ -1,6 +1,7 @@
 package com.atyeti.SpringAnnotationDemo.controller;
 
 import com.atyeti.SpringAnnotationDemo.Entity.Employee;
+import com.atyeti.SpringAnnotationDemo.service.EmployeeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class EmployeeController {
     //@RequestMapping(path="/addEmployee", method= RequestMethod.POST)
     @PostMapping("/addEmployee")
     public String addEmployee(Employee employee){
-        return "added";
+        return EmployeeService.addEmployee(employee);
     }
 
     //@RequestMapping(path="/updateEmployee", method= RequestMethod.PUT)
@@ -41,6 +42,12 @@ public class EmployeeController {
     @DeleteMapping("/deleteEmployee")
     public String deleteEmployee(Employee employee){
         return "deleted";
+    }
+
+
+    @GetMapping("/employees")
+    public Employee viewEmployees(){
+        return EmployeeService.service();
     }
 
 

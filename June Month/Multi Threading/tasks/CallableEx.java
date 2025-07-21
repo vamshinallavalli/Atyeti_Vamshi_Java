@@ -1,4 +1,4 @@
-package com.atyeti;
+//package com.atyeti;
 
 import java.util.concurrent.*;
 
@@ -8,7 +8,7 @@ public class CallableEx {
 
 
         ExecutorService executor = Executors.newFixedThreadPool(3);
-        executor.submit(() -> System.out.println("Thread task"));
+        //executor.submit(() -> System.out.println("Thread task"));
         Callable<Integer> task = () -> 10 + 20;
         Future<Integer> future = executor.submit(task);
         System.out.println(future.get());
