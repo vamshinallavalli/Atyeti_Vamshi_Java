@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DemoApplication (1)" />
         <module name="springdemoapplication" />
+        <module name="springdemoapplication (2)" />
+        <module name="DemoApplication (2)" />
         <module name="DemoApplication" />
         <module name="springdemoapplication (1)" />
       </profile>
@@ -17,8 +19,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DemoApplication" options="-parameters" />
       <module name="DemoApplication (1)" options="-parameters" />
+      <module name="DemoApplication (2)" options="-parameters" />
       <module name="springdemoapplication" options="-parameters" />
       <module name="springdemoapplication (1)" options="-parameters" />
+      <module name="springdemoapplication (2)" options="-parameters" />
     </option>
   </component>
 </project>
