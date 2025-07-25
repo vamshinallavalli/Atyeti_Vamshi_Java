@@ -1,0 +1,86 @@
+NeoBank/
+├── README.md
+├── docker-compose.yml
+├── eureka-server/
+│   ├── pom.xml
+│   └── src/main/java/com/neobank/eurekaserver/
+│       └── EurekaServerApplication.java
+├── config-server/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/configserver/
+│   │   └── ConfigServerApplication.java
+│   └── src/main/resources/
+│       └── application.yml
+├── gateway-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/gateway/
+│   │   └── GatewayServiceApplication.java
+│   └── src/main/resources/
+│       └── application.yml
+├── user-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/userservice/
+│   │   ├── UserServiceApplication.java
+│   │   ├── controller/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── service/
+│   │   ├── service/impl/
+│   │   ├── repository/
+│   │   └── security/ (JWT, filters, config)
+│   └── src/main/resources/
+│       └── application.yml
+├── account-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/accountservice/
+│   │   ├── AccountServiceApplication.java
+│   │   ├── controller/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── service/
+│   │   ├── service/impl/
+│   │   └── repository/
+│   └── src/main/resources/
+│       └── application.yml
+├── transaction-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/transactionservice/
+│   │   ├── TransactionServiceApplication.java
+│   │   ├── controller/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── strategy/ (Strategy Pattern)
+│   │   ├── service/
+│   │   ├── service/impl/
+│   │   └── repository/
+│   └── src/main/resources/
+│       └── application.yml
+├── loan-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/loanservice/
+│   │   ├── LoanServiceApplication.java
+│   │   ├── controller/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── service/
+│   │   ├── service/impl/
+│   │   ├── repository/
+│   │   └── pattern/ (Chain of Responsibility, Decorator)
+│   └── src/main/resources/
+│       └── application.yml
+├── notification-service/
+│   ├── pom.xml
+│   ├── src/main/java/com/neobank/notificationservice/
+│   │   ├── NotificationServiceApplication.java
+│   │   ├── controller/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── service/
+│   │   ├── service/impl/
+│   │   ├── repository/
+│   │   └── observer/ (Observer Pattern)
+│   └── src/main/resources/
+│       └── application.yml
+├── config-repo/
+│   └── (Contains config files like `user-service.yml`, `account-service.yml`, etc.)
+└── pom.xml (Parent aggregator)
