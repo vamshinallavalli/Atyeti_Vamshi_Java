@@ -8,6 +8,8 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class UserDto {
 
     @NotBlank(message = "Full name is required")
