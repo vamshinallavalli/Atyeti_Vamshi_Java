@@ -230,7 +230,8 @@ docker-compose up --build
 
 Swagger UI for each service:
 
-- **User Service**: [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)  
+- **User Service**: [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html](http://localhost:8080/swagger-ui/index.html
+)  
 - **Account Service**: [http://localhost:8082/swagger-ui.html](http://localhost:8082/swagger-ui.html)  
 - **Transaction Service**: [http://localhost:8083/swagger-ui.html](http://localhost:8083/swagger-ui.html)  
 - **Loan Service**: [http://localhost:8084/swagger-ui.html](http://localhost:8084/swagger-ui.html)  
