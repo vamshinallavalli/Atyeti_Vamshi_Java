@@ -29,6 +29,6 @@ public class TransactionController {
 
     @GetMapping("/mini-statement/{accountId}")
     public ResponseEntity<List<Transaction>> getMiniStatement(@PathVariable String accountId) {
-        // Logic to fetch recent N transactions
+        return ResponseEntity.ok(transactionService.getMiniStatement(accountId));
     }
 }
