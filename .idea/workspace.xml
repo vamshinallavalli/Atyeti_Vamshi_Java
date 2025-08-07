@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="User-Service">
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/controller/LoanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/dto/LoanRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/EMI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/LoanType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/repository/LoanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/LoanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/LoanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/Approver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/CreditScoreApprover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/IncomeApprover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/ManagerApprover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/emi/EMICalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/BasicLoan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/InsuranceDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/LifeInsurance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/LoanComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="User-Service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -412,6 +390,17 @@
     </task>
     <option name="localTasksCounter" value="36" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
