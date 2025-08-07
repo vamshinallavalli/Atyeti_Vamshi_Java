@@ -1,7 +1,6 @@
 package com.atyeti.quizapp.controller;
 
 import com.atyeti.quizapp.dto.QuestionDto;
-import com.atyeti.quizapp.model.Question;
 import com.atyeti.quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
