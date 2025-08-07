@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="User-Service">
-      <change beforePath="$PROJECT_DIR$/NeoBank A Modular Digital Banking System/account-service/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/controller/LoanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/dto/LoanRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/EMI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/entity/LoanType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/repository/LoanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/LoanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/LoanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/Approver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/CreditScoreApprover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/IncomeApprover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/approval/ManagerApprover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/emi/EMICalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/BasicLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/InsuranceDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/LifeInsurance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/loan-service/src/main/java/com/neobank/loanservice/service/insurance/LoanComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/java/com/neobank/userservice/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NeoBank_A_Modular_Digital_Banking_System/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +42,12 @@
     &quot;assignee&quot;: &quot;vamshinallavalli&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git",
-    "accountId": "7d6d10b2-b192-42f4-83e5-7aecd3e3055b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git&quot;,
+    &quot;accountId&quot;: &quot;7d6d10b2-b192-42f4-83e5-7aecd3e3055b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -36,16 +56,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Atyeti_Vamshi_Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Atyeti_Vamshi_Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\Atyeti_Vamshi_Java\May Month\Declarations and Access Control (15-05-2025)" />
