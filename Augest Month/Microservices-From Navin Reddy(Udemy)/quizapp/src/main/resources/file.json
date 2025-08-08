@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "question_title": "Which Java keyword is used to create a subclass?",
+    "option1": "class",
+    "option2": "interface",
+    "option3": "extends",
+    "option4": "implements",
+    "right_answer": "extends",
+    "difficultylevel": "Easy",
+    "category": "JAVA"
+  },
+  {
+    "id": 2,
+    "question_title": "What is the output of the following Java code snippet?",
+    "option1": "4",
+    "option2": "5",
+    "option3": "6",
+    "option4": "Compile error",
+    "right_answer": "5",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 3,
+    "question_title": "In Java, what is the default value of an uninitialized boolean variable?",
+    "option1": "true",
+    "option2": "false",
+    "option3": "0",
+    "option4": "null",
+    "right_answer": "false",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 4,
+    "question_title": "Which Java keyword is used to explicitly throw an exception?",
+    "option1": "try",
+    "option2": "throw",
+    "option3": "catch",
+    "option4": "finally",
+    "right_answer": "throw",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 5,
+    "question_title": "What does the \"static\" keyword mean in Java?",
+    "option1": "It indicates that a variable is constant.",
+    "option2": "It indicates that a method can be accessed without creating an instance of the class.",
+    "option3": "It indicates that a class cannot be extended.",
+    "option4": "It indicates that a variable is of primitive type.",
+    "right_answer": "It indicates that a method can be accessed without creating an instance of the class.",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 6,
+    "question_title": "What is the correct way to declare a constant variable in Java?",
+    "option1": "constant int x = 5;",
+    "option2": "final int x = 5;",
+    "option3": "static int x = 5;",
+    "option4": "readonly int x = 5;",
+    "right_answer": "final int x = 5;",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 7,
+    "question_title": "Which loop in Java allows the code to be executed at least once?",
+    "option1": "for loop",
+    "option2": "while loop",
+    "option3": "do-while loop",
+    "option4": "switch loop",
+    "right_answer": "do-while loop",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 8,
+    "question_title": "What is the purpose of the \"break\" statement in Java?",
+    "option1": "To terminate a loop or switch statement and transfer control to the next statement.",
+    "option2": "To skip the rest of the code in a loop and move to the next iteration.",
+    "option3": "To define a label for a loop or switch statement.",
+    "option4": "To check a condition and execute a block of code repeatedly.",
+    "right_answer": "To terminate a loop or switch statement and transfer control to the next statement.",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 9,
+    "question_title": "Which Java operator is used to concatenate two strings?",
+    "option1": "+",
+    "option2": "-",
+    "option3": "*",
+    "option4": "/",
+    "right_answer": "+",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 10,
+    "question_title": "In Java, which collection class provides an implementation of a dynamic array?",
+    "option1": "HashMap",
+    "option2": "ArrayList",
+    "option3": "LinkedList",
+    "option4": "HashSet",
+    "right_answer": "ArrayList",
+    "difficultylevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "id": 11,
+    "question_title": "Which Python function is used to calculate the length of a list?",
+    "option1": "count()",
+    "option2": "size()",
+    "option3": "length()",
+    "option4": "len()",
+    "right_answer": "len()",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 12,
+    "question_title": "What is the output of the following Python code snippet?",
+    "option1": "[1, 2, 3]",
+    "option2": "[1, 2, 3, 4]",
+    "option3": "[4, 3, 2, 1]",
+    "option4": "Error",
+    "right_answer": "[1, 2, 3, 4]",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 13,
+    "question_title": "Which Python statement is used to exit from a loop prematurely?",
+    "option1": "break",
+    "option2": "continue",
+    "option3": "pass",
+    "option4": "return",
+    "right_answer": "break",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 14,
+    "question_title": "What is the purpose of the \"range()\" function in Python?",
+    "option1": "To generate a random number within a given range.",
+    "option2": "To iterate over a sequence of numbers.",
+    "option3": "To sort a list in ascending order.",
+    "option4": "To calculate the length of a string.",
+    "right_answer": "To iterate over a sequence of numbers.",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 15,
+    "question_title": "In Python, which data type is mutable?",
+    "option1": "int",
+    "option2": "float",
+    "option3": "str",
+    "option4": "list",
+    "right_answer": "list",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 16,
+    "question_title": "Which Python module is used for working with dates and times?",
+    "option1": "datetime",
+    "option2": "math",
+    "option3": "os",
+    "option4": "sys",
+    "right_answer": "datetime",
+    "difficultylevel": "Easy",
+    "category": "Python"
+  },
+  {
+    "id": 22,
+    "question_title": null,
+    "option1": "Berlin",
+    "option2": "Madrid",
+    "option3": "Paris",
+    "option4": "Rome",
+    "right_answer": null,
+    "difficultylevel": null,
+    "category": "Social"
+  }
+]
