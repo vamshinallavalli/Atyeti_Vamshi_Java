@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Component
-public class RIGSTTransactionStrategy implements TransactionStrategy {
+public class RTGSTTransactionStrategy implements TransactionStrategy {
 
     @Autowired
     private TransactionRepository repository;
@@ -23,7 +23,7 @@ public class RIGSTTransactionStrategy implements TransactionStrategy {
         transaction.setAccountFrom(request.getAccountFrom());
         transaction.setAccountTo(request.getAccountTo());
         transaction.setAmount(request.getAmount());
-        transaction.setTransactionType(TransactionType.RIGS);
+        transaction.setTransactionType(TransactionType.RTGS);
         transaction.setTimestamp(LocalDateTime.now());
         transaction.setStatus("SUCCESS");
 

@@ -78,7 +78,7 @@ public class AccountServiceImpl implements AccountService {
     private String generateUniqueAccountNumber() {
         String accountNumber;
         do {
-            accountNumber = "ACCT" + String.format("%08d", new Random().nextInt(100_000_000));
+            accountNumber = "ACCT" + String.format("%06d", new Random().nextInt(100_000_000));
         } while (accountRepository.findByAccountNumber(accountNumber).isPresent());
         return accountNumber;
     }

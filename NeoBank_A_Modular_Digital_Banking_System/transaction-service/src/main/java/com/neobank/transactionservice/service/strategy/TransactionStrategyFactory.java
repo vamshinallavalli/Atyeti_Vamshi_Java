@@ -15,10 +15,10 @@ public class TransactionStrategyFactory {
     @Autowired
     public TransactionStrategyFactory(NEFTTransactionStrategy neftStrategy,
                                       IMPOSTransactionStrategy impsStrategy,
-                                      RIGSTTransactionStrategy rigstStrategy) {
+                                      RTGSTTransactionStrategy rigstStrategy) {
         strategyMap.put(TransactionType.NEFT, neftStrategy);
         strategyMap.put(TransactionType.IMPS, impsStrategy);
-        strategyMap.put(TransactionType.RIGS, rigstStrategy);
+        strategyMap.put(TransactionType.RTGS, rigstStrategy);
     }
 
     public TransactionStrategy getStrategy(TransactionType type) {

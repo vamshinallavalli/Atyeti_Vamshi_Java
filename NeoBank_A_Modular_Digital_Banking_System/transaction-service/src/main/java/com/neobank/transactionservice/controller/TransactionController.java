@@ -21,6 +21,11 @@ public class TransactionController {
         this.transactionService = transactionService;
     }
 
+    @GetMapping("/logs")
+    public ResponseEntity<List<Transaction>> getTransactionLogs() {
+        return ResponseEntity.ok(transactionService.getAllTransactions());
+    }
+
     @PostMapping
     public ResponseEntity<TransactionResponse> transact(@RequestBody TransactionRequest request) {
         TransactionResponse response = transactionService.makeTransaction(request);

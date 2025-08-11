@@ -5,7 +5,6 @@ import com.atyeti.quizapp.dto.QuestionDto;
 import com.atyeti.quizapp.model.Question;
 import com.atyeti.quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,7 +31,7 @@ class QuestionController {
         return ResponseEntity.ok(questions);
     }
 
-    //get by id
+    // Get by id
     @GetMapping("/{id}")
     public List<Question> getById(@PathVariable Long id) {
         return questionService.getById(id);
@@ -44,11 +43,13 @@ class QuestionController {
         return questionService.addQuestion(question);
     }
 
+    // Deleting Question by ID
     @DeleteMapping("/delete/{id}")
     public String deleteQuestionById(@PathVariable Long id) {
         return questionService.deleteQuestionById(id);
     }
 
+    // Update Question Using ID
     @PutMapping("/update/{id}")
     public String updateQuestionById(@PathVariable Long id,@RequestBody QuestionDto question){
         return questionService.updateQuestionById(id,question);

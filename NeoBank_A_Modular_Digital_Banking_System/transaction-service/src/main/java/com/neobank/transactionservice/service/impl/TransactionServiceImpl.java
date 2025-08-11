@@ -32,6 +32,12 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
+    public List<Transaction> getAllTransactions() {
+        return transactionRepository.findAll();
+    }
+
+
+    @Override
     public List<Transaction> getMiniStatement(String accountId) {
         return transactionRepository.findTop10ByAccountFromOrAccountToOrderByTimestampDesc(accountId, accountId);
     }

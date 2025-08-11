@@ -72,7 +72,7 @@ public ResponseEntity<List<Question>> getAllQuestions() {
 
     public String deleteQuestionById(Long id) {
     questionDao.deleteById(id);
-    logger.info("Deleted the question: with id: ",id);
+        logger.info("Deleted question with id: {}", id);
     return "Successfully deleted";
     }
 
