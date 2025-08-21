@@ -10,6 +10,4 @@ import java.util.List;
 public interface QuestionDao extends JpaRepository<Question,Long> {
 
     List<Question> findByCategory(String category);
-
-    List<Question> getQuestionById(Long id);
 }

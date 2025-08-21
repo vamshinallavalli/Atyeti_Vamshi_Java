@@ -5,9 +5,9 @@ import com.atyeti.quizapp.dto.QuestionDto;
 import com.atyeti.quizapp.model.Question;
 import com.atyeti.quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -17,41 +17,43 @@ class QuestionController {
     @Autowired
     private QuestionService questionService;
 
-    // Get all questions
     @GetMapping("/questions")
     public ResponseEntity<List<Question>> getAllQuestions() {
-       List<Question> question= questionService.getAllQuestions().getBody();
-       return ResponseEntity.ok(question);
+        return ResponseEntity.ok(questionService.getAllQuestions());
     }
 
-    // Get questions filtered by category
     @GetMapping("/category/{category}")
     public ResponseEntity<List<Question>> getByCategory(@PathVariable String category) {
-        List<Question> questions = questionService.getByCategory(category);
-        return ResponseEntity.ok(questions);
+        return ResponseEntity.ok(questionService.getByCategory(category));
     }
 
-    // Get by id
     @GetMapping("/{id}")
-    public List<Question> getById(@PathVariable Long id) {
-        return questionService.getById(id);
+    public ResponseEntity<List<Question>> getById(@PathVariable Long id) {
+        List<Question> result = questionService.getById(id);
+        return result.isEmpty() ?
+                ResponseEntity.notFound().build() :
+                ResponseEntity.ok(result);
     }
 
-    // Add a new question
     @PostMapping("/add")
-    public String addQuestion(@RequestBody Question question) {
-        return questionService.addQuestion(question);
+    public ResponseEntity<String> addQuestion(@RequestBody Question question) {
+        return questionService.addQuestion(question) ?
+                ResponseEntity.status(HttpStatus.CREATED).body("Question added") :
+                ResponseEntity.badRequest().body("Failed to add question");
     }
 
-    // Deleting Question by ID
     @DeleteMapping("/delete/{id}")
-    public String deleteQuestionById(@PathVariable Long id) {
-        return questionService.deleteQuestionById(id);
+    public ResponseEntity<String> deleteQuestionById(@PathVariable Long id) {
+        return questionService.deleteQuestionById(id) ?
+                ResponseEntity.ok("Deleted") :
+                ResponseEntity.notFound().build();
     }
 
-    // Update Question Using ID
     @PutMapping("/update/{id}")
-    public String updateQuestionById(@PathVariable Long id,@RequestBody QuestionDto question){
-        return questionService.updateQuestionById(id,question);
+    public ResponseEntity<String> updateQuestionById(@PathVariable Long id,
+                                                     @RequestBody QuestionDto question) {
+        return questionService.updateQuestionById(id, question) ?
+                ResponseEntity.ok("Updated") :
+                ResponseEntity.notFound().build();
     }
 }
