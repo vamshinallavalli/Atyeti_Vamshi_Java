@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Optional;
+
 @Service
 public class UserService {
 
@@ -56,21 +58,35 @@ public class UserService {
         return convertToDto(user);
     }
 
-    public UserDto updateUser(Long id, UserDto updatedDto) {
+    public UserDto updateUser(Long id, User updatedUser) {
         logger.info("Updating user with ID: {}", id);
-        User user = userRepository.findById(id)
+
+        User existingUser = userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException("User Not Found!"));
 
-        if (updatedDto.getFullName() != null) user.setFullName(updatedDto.getFullName());
-        if (updatedDto.getEmail() != null) user.setEmail(updatedDto.getEmail());
-        if (updatedDto.getPhone() != null) user.setPhone(updatedDto.getPhone());
-        if (updatedDto.getPassword() != null && !updatedDto.getPassword().isEmpty()) {
-            user.setPassword(passwordEncoder.encode(updatedDto.getPassword()));
+
+        if (updatedUser.getFullName() != null && !updatedUser.getFullName().isEmpty()) {
+            existingUser.setFullName(updatedUser.getFullName());
         }
 
-        userRepository.save(user);
-        logger.debug("User updated: {}", user);
-        return convertToDto(user);
+        if (updatedUser.getEmail() != null && !updatedUser.getEmail().isEmpty()) {
+            existingUser.setEmail(updatedUser.getEmail());
+        }
+
+        if (updatedUser.getPhone() != null && !updatedUser.getPhone().isEmpty()) {
+            existingUser.setPhone(updatedUser.getPhone());
+        }
+
+        if (updatedUser.getPassword() != null && !updatedUser.getPassword().isEmpty()) {
+            existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+        }
+
+
+        User savedUser = userRepository.save(existingUser);
+
+        logger.debug("User updated successfully: {}", savedUser);
+
+        return convertToDto(savedUser);
     }
 
     public String deleteUser(Long id) {
@@ -80,6 +96,22 @@ public class UserService {
         userRepository.deleteById(id);
         logger.info("User deleted successfully: {}", id);
         return "User Deleted Successfully";
+    }
+
+    public String userLogin(String userName, String password) {
+        Optional<User> byEmail = userRepository.findByEmail(userName);
+        if(byEmail.isPresent()) {
+            User user = byEmail.get();
+
+            if (passwordEncoder.matches(password, user.getPassword())) {
+                return "Login successful";
+            } else {
+                return "Invalid Password Try Again!";
+            }
+        }
+        else{
+            return "User Not Found with "+userName+"!";
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 package com.neobank.userservice.controller;
 
 import com.neobank.userservice.dto.UserDto;
+import com.neobank.userservice.entity.User;
 import com.neobank.userservice.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,9 +28,18 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<UserDto> updateUser(@PathVariable Long id, @Valid @RequestBody UserDto user) {
-        UserDto updatedUser = userService.updateUser(id, user);
-        return ResponseEntity.ok(updatedUser);
+    public ResponseEntity<?> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) {
+       try{
+           return ResponseEntity.ok(userService.updateUser(id,user));
+       } catch (Exception e) {
+           return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+       }
+    }
+
+    @PostMapping("/login")
+    public String login(@RequestParam("email") String email,
+                        @RequestParam("password") String password) {
+        return userService.userLogin(email, password);
     }
 
     @DeleteMapping("/{id}")

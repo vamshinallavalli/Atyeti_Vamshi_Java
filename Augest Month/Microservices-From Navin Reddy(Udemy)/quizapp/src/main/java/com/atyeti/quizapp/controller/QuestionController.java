@@ -49,6 +49,9 @@ class QuestionController {
                 ResponseEntity.notFound().build();
     }
 
+    @PutMapping
+    public ResponseEntity
+
     @PatchMapping("/update/{id}")
     public ResponseEntity<String> updateQuestionById(@PathVariable Long id,
                                                      @RequestBody QuestionDto question) {
