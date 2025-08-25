@@ -13,8 +13,8 @@ import lombok.Setter;
 public class Question {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+   // @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String question_title;
     private String option1;
     private String option2;

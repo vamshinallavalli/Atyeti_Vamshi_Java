@@ -49,7 +49,7 @@ class QuestionController {
                 ResponseEntity.notFound().build();
     }
 
-    @PutMapping("/update/{id}")
+    @PatchMapping("/update/{id}")
     public ResponseEntity<String> updateQuestionById(@PathVariable Long id,
                                                      @RequestBody QuestionDto question) {
         return questionService.updateQuestionById(id, question) ?

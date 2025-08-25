@@ -60,18 +60,19 @@ public class QuestionService {
         Question existing = questionDao.findById(id)
                 .orElseThrow(() -> new QuestionNotFoundException("No question found with id: " + id));
 
-        existing.setQuestion_title(dto.getQuestionTitle());
-        existing.setOption1(dto.getOption1());
-        existing.setOption2(dto.getOption2());
-        existing.setOption3(dto.getOption3());
-        existing.setOption4(dto.getOption4());
-        existing.setRight_answer(dto.getRightAnswer());
-        existing.setDifficultylevel(dto.getDifficultyLevel());
-        existing.setCategory(dto.getCategory());
+        Question updated = QuestionMapper.toEntity(dto);
 
-        questionDao.save(existing);
+        updated.setId(existing.getId());
+
+        questionDao.save(updated);
         return true;
     }
 
-
+    public Question saveQuestion(Question question) {
+        if (question.getId() == null) {
+            Long nextId = questionDao.findMaxId() + 1;
+            question.setId(nextId);
+        }
+        return questionDao.save(question);
+    }
 }
