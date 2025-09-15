@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/September Month/Kafka/KafkaSmsService/src/main/java/com/example/KafkaSmsService/service/SMSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/September Month/Kafka/KafkaSmsService/src/main/java/com/example/KafkaSmsService/service/SMSService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2xRCngdFd3jghCAWw6LXh9lMKwk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
