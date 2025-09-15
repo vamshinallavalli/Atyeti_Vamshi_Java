@@ -22,6 +22,3 @@ public class SMSService {
         System.out.println("SMS sent successfully with SID: " + message.getSid());
     }
 }
-//    public static final String ACCOUNT_SID="ACbc1f7a3898128c481c3196d8c90f228f";
-//    public static final String AUTH_TOKEN="42be0d0279dc6caddd15b8c8a90c6d91";
-//    public static final String FROM_NUMBER="+919676278087";
