@@ -16,7 +16,7 @@ public class Publisher implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //template.send("tcp1",ses->ses.createTextMessage("from the Sender::"+new Date()));
-        template.convertAndSend("tcp1", "Hello Subscriber!");
+        template.convertAndSend("Vamshi", "Hello Subscriber!");
         System.out.println("Sender has Sent the Message");
     }
 }

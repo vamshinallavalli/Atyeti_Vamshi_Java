@@ -15,7 +15,7 @@ public class PTPSender implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        template.send("testmq1",ses->ses.createTextMessage("from the Sender::"+new Date()));
+        template.send("Revathi",ses->ses.createTextMessage("from the Sender::"+new Date()));
         System.out.println("Sender has Sent the Message");
     }
 }

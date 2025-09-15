@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Subscriber {
 
-    @JmsListener(destination = "tcp1")
+    @JmsListener(destination = "Vamshi")
     public void readMessage(String text){
         System.out.println("Received Message::"+text);
     }
