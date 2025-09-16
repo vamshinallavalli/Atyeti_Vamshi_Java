@@ -1,0 +1,10 @@
+Spring boot Security
+====================
+
+=> It is spring extension module that provides multiple readymade filters to enable security on spring boot 
+   MVC and spring boot rest applications.
+
+=> if the security module is used in spring style then it is called spring security
+
+=> if the security module is used in spring boot style then it is called spring boot security
+
