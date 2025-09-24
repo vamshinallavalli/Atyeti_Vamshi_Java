@@ -2,6 +2,15 @@ zookeeper-server-start.bat C:\kafka_2.13-3.9.1\config\zookeeper.properties
 
 kafka-server-start.bat C:\kafka_2.13-3.9.1\config\server.properties
 
+
+
+or
+
+
+C:\kafka_2.13-3.9.1>.\bin\windows\kafka-storage.bat format -t %RANDOM% -c .\config\kraft\server.properties
+
+C:\kafka_2.13-3.9.1>.\bin\windows\kafka-server-start.bat .\config\kraft\server.properties
+
 application properties
 ======================
 

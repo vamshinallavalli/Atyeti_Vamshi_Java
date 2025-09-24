@@ -8,3 +8,281 @@ Spring boot Security
 
 => if the security module is used in spring boot style then it is called spring boot security
 
+ ---------------------------------------------------------
+| Checking the access permission called authorization      |
+
+| Checking the identity of a user is called authentication |
+ ---------------------------------------------------------
+
+ One for Authentication → who are you? (InMemory, DB, LDAP, etc.)
+
+ One for Authorization → what can you access? (roles, permissions, URLs, etc.)
+
+
+Problem:
+------------------------------------------------
+[ browser window ]
+
+                  webserver / Application server
++------------------------------------------------------+
+|  Servlet container        |   IOC container          |
+|                           |                          |
+|   [ Servlet Filter comp ] |   [ Java class acting    |
+|                           |     as spring bean ]     |
+|                           |                          |
++------------------------------------------------------+
+
+=>Here spring bean injection to ServletFilter comp is NOT possible,
+  because ServletFilter comp is not taken as spring bean.
+  It is managed by ServletContainer, not IOC container.
+
+=> In order to inject dependent Spring bean into servlet filter comp,
+   we need to take ServletFilter comp also as Spring bean
+   in IOC container.
+
+
+
+Solution:
+------------------------------------------------
+[ browser window ]
+         |
+         | (1) request
+         v
+
+               web server / application server
++--------------------------------------------------------------+
+|  ServletContainer                  |  IOC container          |
+|                                    |                         |
+|   [ DelegatingFilterProxy          |   [ ServletFilter comp  |
+|     (ready ServletFilter) ]        |     (as spring bean) ]  |
+|   - url pattern: /                  |   - bean id: f1        |
+|   - filter name: f1                 |   (Target spring bean) |
+|                                    |                         |
+|   (2) -> (3) -> (4)                 |   [ Java class         |
+|                                    |     as spring bean ]    |
+|                                    |   (Dependent bean)      |
++--------------------------------------------------------------+
+
+This time Dependency Injection is possible!
+
+
+=>if we take servlet filter comp as spring bean in IOC container then any another dependent spring bean object can be injected to that
+Servlet filter spring bean .. but that servlet filter can not trap and take requests given browser window .. For this we need to cfg special
+ready made ServletFilter comp given by spring security module that is "DelegatingFilterProxy" having url pattern "/" and logical name
+matching with ServletFilter comp's bean id.belonging to IOC container
+
+
+w.r.t diagram
+=============
+(1) browser gives the request to web application
+(2) DelegatingFilterProxy traps and takes the request
+(Searches for that ServletFilter comp whose
+(3)DelegatingFilterProxy delegates/passes the request to ServletFilter comp that is acting as spring bean in IOC container
+bean id matches with DelegatingFilterProxy's logical name)
+(4) the logics in ServletFilter comp executes
+(5) ServletFilter comp uses the injected dependent spring bean services through method calls.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+=>Security in web application is nothing but enabling Authentication + Authorization on the web application
+
+Authentication :: checking the identity of user using usernames, passwords, thumb impressions, iris , digital signatures and etc ..
+Authorization :: Checking the access permissions of the autheticated users on different resources of the Project.
+                           (Here the roles of the user will be verified before allowing the user to access different resources of the Project)
+
+       =>Roles are nothing but designations given to users .. based on roles of the users the access permissions on different resources
+         will be decided.
+
+       =>All customers, employees of the bank must be authenticated to use bankApp ..
+       =>The users having customer role will get less access peromission on the resoruces where as
+       the users having employee role will get more access peromission on the resoruces.
+
+   => It is always recomanded to enable authorization of accessing the resoucers not based on the username .. It is recomanded to
+      perform on the roles of the users.
+   =>during the authentication process.. get the roles of the user and use those roles for authentization.
+
+End User
+   |
+   v
++-------------------+
+|   Authentication  |
+| (username, pwd,   |                                                 realm means small DB s/w or repository where the usernames, passwords and roles are 
+|  verification)    |                                                 managed.
++-------------------+
+   | success -> get roles from realm
+   | failure -> 401 error (if authentication fails)
+   v
++-------------------+
+|   Authorization   |
+| (access based on  |
+|    roles)         |
++-------------------+
+   | success -> access resources
+   | failure -> 403 error (if authorization fails)
+   |
+   +----> Resource1
+   +----> Resource2
+   +----> Resource3
+
+
+=====================================
+The comps of Security implementation
+=====================================
+a) Authentication provider / Authentication Info provider
+b) Authentication and Authorization manager
+
+
+a) Authentication provider/a) Authentication Info provider /Securty Realm 
+
+It is the small realm where usernames, passwords ,roles are managed and will be used during both
+authentication and authorization. The possible places are
+
+a) Properties file
+b) xml file file                             LDAP :: Lightweight Directory Access Protocol
+c) json file
+d) Db s/w                                    =>In all other Authentication providers we can get the password of the users
+e) LDAP server (best)                          if they forgot the passwords .. where in LDAP server .. no proivision to get
+g) InMemory DB                                 password .. only resetting of password is possible.
+and etc ..
+
+
+b) Authentication and Authorization manager
+                   =>It is the component that verifies given username and password to perform authentication and gives 401 error if
+                     authenticatio fails.
+
+                   =>The same component collects the roles of authenticated user and performs Authorization activities accessing different
+                     resources .. gives 403 error if authroization fails.
+
+=>The Authentication and Authorization manager can be arranged in two ways
+
+a) Using Programatic approach (bad)
+=>Here we need to develop the logics of Authentication and Authorization manager explicitly
+  by spending huge amounts of time and brain manually (Not recomanded)
+
+b) Using Declarative approach (good)
+=> Max Web server /App servers provide built-in security support by providing built-in
+Authentication and Authorization manager ... By adding entries Web.xml file we can activate
+that Authentication and Authorization manager (refer security in web application in servlket,jsp env .. )
+
+Limitations of Declaration approch for securiing web applications (working with servlet container
+supplied Authentication and Authorization manager through web.xml entries)
+------------------------------------------------------------------------------------------------------------------------
+a) Only selected servers support this features .. some times we need to purchase
+   License of costly web server or Application server to use this feature
+b) As of now this facility possible by adding addtional entries in web.xml file .. i.e not suitable
+   in 100% code driven cfgs , spring boot apps (where xml is totally eliminated)
+c) When move from one server to another server these configuration in web.xml file may change
+   (web.xml entries related to security are not portable across the multiple servers)
+d) No support for LDAP server as authentication info provider.
+and etc ..
+
+To overcome these problems we use spring security or spring boot security
+
+Advantages of spring security /spring boot security
+------------------------------------------------------------------------------------------------------------------------
+a) Can be used in spring MVC/spring rest /spring micros services apps and also in non-spring
+   based web applications like servlet ,jsp web applications, JSF web applications and etc ...
+b) The security cfgs code are portable across the multiple servers
+c) We can'tifis security irrespective of wheather the underlying server supports the ServletContainer
+   level Declarative security service or not (spring security no way related Servlet container's security )
+d) Supports different Authentication Info providers includng LDAP.
+e) We need not to arrange costly servers only for security ..
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+In spring env or spring boot env .. we can apply security on MVC apps or spring rest apps or micro services Apps
+in 3 approaches
+
+
+a) Using Spring security/spring boot secuirty
+
+i) Basic Authentication (browser generates the dialog box asking username, password)
+ii) Form based Authentication ( readymade or user-defined form page will be there asking username, password) (best)
+         -> Using InMemory DB as authentication Info provider (RAM Level DB)
+         -> Using Properties file as authentication Info provider
+         -> Using DB s/w as authentication info provider
+                        with the support of spring JDBC/ sprjing ORM/spring data JPA / UserDetails service
+         ->Using LDAP server as authentication info provider.
+
+b) Using JWT (JSON web tokens)
+(loosing its popularity)
+
+c) Using Oauth 2.x (Open Authorization) / okta                             SSO --- Single Sign On
+[ we can use FB , google , twitter login
+for SSO  feature]
+-----------------------------------------------------------------------------------------------------------------------
+
+Spring Boot security
+====================
+
+=>Once we add spring-boot-stater-security-starter to spring MVC /spring Rest/ microservices project one
+ready made filter called "DelegatingFilterProxy" will be registered with "/" url pattern having logical name "springSecurityFilterChain" ..
+For this One class will be genearted extending from AbstractSecurityWebApplicationInitializer(AC)
+class (Internal class )
+
+=> we need to develop ConfigurationAdapter class as @Configuration class extending from WebSecurityConfigurerAdapter
+overriding two configure(-) methods having authentication info provider, authentication, authorization details.
+Every details we add in authentication and authorization seperate InMemory Filters will be generated as spring beans
+and they will be linked'DelegatingFilterProxy filter i.e DelegatingFilterProxy traps the request and links these
+requests dynamically generate filters then passes to controller clases through DispatcherServlet.
+
+
+Adding Spring Security starter adds a universal security gatekeeper (DelegatingFilterProxy).
+We configure authentication + authorization rules, which create filter beans.
+The gatekeeper chains these filters together → only safe requests reach our controllers.
+
+
+Client (Browser / Postman)
+          |
+          v
+  [ DelegatingFilterProxy ]   <-- Registered automatically with "/"
+          |
+          v
+  [ springSecurityFilterChain ]  <-- Collection of security filters
+          |
+    --------------------------------------------------------
+    | Auth Filter (UsernamePasswordAuthenticationFilter)    |
+    | CSRF Filter                                           |
+    | Session Management Filter                             |
+    | Authorization Filter (Role/URL based)                 |
+    | ... (other filters depending on config)               |
+    --------------------------------------------------------
+          |
+          v
+   [ DispatcherServlet ]
+          |
+          v
+   [ Controller / REST API ]
+          |
+          v
+      Response to client
+--------------------------------------------------------------------------------------------------------------------
+Authorization levels in Spring / Spring Boot security
+
+a) permitAll() :: No authentication + Ne Authorization-(no role checking)
+           eg :: home page , about us page , contact us page , terms and conditions page
+
+b) authenticate() :: Only Authentication on the given request url resource(controller) and no authorization (no role checking)
+                eg :: main menu page ,inbox page ,send/compose mail page
+
+c) hasARole() :: Authentication + authorization (role checking will be there)
+                  eg :: checking balance page , transfer money ,withdraw/deposite money page ,changing password
+                        deleting mails and etc ..
+
+d) hasAnyRole :: Authentication +authorization (any one role should be there for user
+                                                     in the list of given roles)
+                  eg :: checking balance page , transfer money , withdraw/deposite money page ,changing password
+                        deleting mails and etc ..
+
+controller classes request paths
+/home------ > permitAll
+/contactUs -------- > permitAll
+/aboutUs ----- >permitAll
+/inbox-- > authenticated
+/checkbalance --------- > hasAnyRole "USER","MANAGER"
+/transferMoney ---- > hasARole "USER"
+/depositeMoney ---- > hasAnyRole "USER","MANAGER","VISITOR"
+
+
+

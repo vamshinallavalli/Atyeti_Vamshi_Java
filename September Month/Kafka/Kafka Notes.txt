@@ -321,3 +321,4 @@ spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.S
 -> Producer /Publisher sends the message to kafka setup as Serialized key=value pair
 
 -> Consumer /Subscriber reads the message from kafka setup as DeSerialized key=value pair
+
