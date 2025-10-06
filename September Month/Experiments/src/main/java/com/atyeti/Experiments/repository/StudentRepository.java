@@ -1,5 +1,6 @@
 package com.atyeti.Experiments.repository;
 
+import com.atyeti.Experiments.dto.StudentDto;
 import com.atyeti.Experiments.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

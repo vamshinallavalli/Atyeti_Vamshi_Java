@@ -1,0 +1,8 @@
+com\atyeti\Experiments\mapper\StudentMapperImpl.class
+com\atyeti\Experiments\mapper\StudentMapper.class
+com\atyeti\Experiments\controller\StudentController.class
+com\atyeti\Experiments\entity\Student.class
+com\atyeti\Experiments\service\StudentService.class
+com\atyeti\Experiments\repository\StudentRepository.class
+com\atyeti\Experiments\ExperimentsApplication.class
+com\atyeti\Experiments\dto\StudentDto.class

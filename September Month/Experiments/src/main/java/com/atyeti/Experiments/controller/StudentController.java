@@ -1,8 +1,7 @@
 package com.atyeti.Experiments.controller;
 
-import com.atyeti.Experiments.entity.Student;
+import com.atyeti.Experiments.dto.StudentDto;
 import com.atyeti.Experiments.service.StudentService;
-import com.atyeti.Experiments.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,24 +15,21 @@ public class StudentController {
     @Autowired
     private StudentService service;
 
-    @Autowired
-    private StudentRepository repository;
-
-    // ✅ Get all students
+    // Get all students
     @GetMapping
-    public List<Student> getAllStudents() {
-        return repository.findAll();
+    public List<StudentDto> getAllStudents() {
+        return service.getAllStudents();
     }
 
-    // ✅ Get student by ID
+    // Get student by ID
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
-        return service.getBydId(id);
+    public StudentDto getStudentById(@PathVariable Long id) {
+        return service.getById(id);
     }
 
-    // ✅ Add a new student
+    // Add a new student
     @PostMapping
-    public Student addStudent(@RequestBody Student student) {
-        return service.addStudent(student);
+    public StudentDto addStudent(@RequestBody StudentDto dto) {
+        return service.addStudent(dto);
     }
 }

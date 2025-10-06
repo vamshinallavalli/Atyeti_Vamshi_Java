@@ -1,25 +1,17 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import AddStudent from './pages/AddStudent';
-import ViewStudent from './pages/ViewStudent';
+import React from "react";
+import StudentList from "./components/StudentList";
+import AddStudent from "./components/AddStudent";
+import GetStudentById from "./components/GetStudentById";
 
 function App() {
   return (
-    <div>
-      <nav style={{ padding: '10px', background: '#eee' }}>
-        <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-        <Link to="/add-student" style={{ marginRight: '10px' }}>Add Student</Link>
-        <Link to="/view-student">View Students</Link>
-      </nav>
-
-      <div style={{ padding: '20px' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/add-student" element={<AddStudent />} />
-          <Route path="/view-student" element={<ViewStudent />} />
-        </Routes>
-      </div>
+    <div style={{ padding: "20px" }}>
+      <h1>🎓 Student Management System</h1>
+      <AddStudent />
+      <hr />
+      <GetStudentById />
+      <hr />
+      <StudentList />
     </div>
   );
 }
