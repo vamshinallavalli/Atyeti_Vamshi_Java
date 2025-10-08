@@ -49,12 +49,9 @@ class QuestionController {
                 ResponseEntity.notFound().build();
     }
 
-    @PutMapping
-    public ResponseEntity
-
-    @PatchMapping("/update/{id}")
-    public ResponseEntity<String> updateQuestionById(@PathVariable Long id,
-                                                     @RequestBody QuestionDto question) {
+    @PutMapping("/update/{id}")
+    public ResponseEntity<String> updateQuestion(@PathVariable Long id,
+                                                 @RequestBody QuestionDto question) {
         return questionService.updateQuestionById(id, question) ?
                 ResponseEntity.ok("Updated") :
                 ResponseEntity.notFound().build();
