@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/October Month/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/.idea/October Month.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/src/main/java/com/atyeti/SpringGenAI/OpenAIController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/src/main/java/com/atyeti/SpringGenAI/SpringGenAiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/October Month/SpringGenAI/src/test/java/com/atyeti/SpringGenAI/SpringGenAiApplicationTests.java" beforeDir="false" />
+    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="NeoBank – Modular Digital Banking System">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,30 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747891670762</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <option name="closed" value="true" />
-      <created>1748927972479</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1748927972479</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update">
-      <option name="closed" value="true" />
-      <created>1749292194113</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749292194113</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update">
-      <option name="closed" value="true" />
-      <created>1749292296151</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1749292296151</updated>
     </task>
     <task id="LOCAL-00007" summary="Update">
       <option name="closed" value="true" />
@@ -520,7 +482,31 @@
       <option name="project" value="LOCAL" />
       <updated>1759907399129</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Update">
+      <option name="closed" value="true" />
+      <created>1759908085939</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908085939</updated>
+    </task>
+    <task id="LOCAL-00054" summary="SpringBoot">
+      <option name="closed" value="true" />
+      <created>1759908152555</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908152555</updated>
+    </task>
+    <task id="LOCAL-00055" summary="NeoBank – Modular Digital Banking System">
+      <option name="closed" value="true" />
+      <created>1759908289616</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908289616</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,6 +524,8 @@
     <MESSAGE value="Daily Update" />
     <MESSAGE value="User-Service" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="SpringBoot" />
+    <MESSAGE value="NeoBank – Modular Digital Banking System" />
+    <option name="LAST_COMMIT_MESSAGE" value="NeoBank – Modular Digital Banking System" />
   </component>
 </project>
