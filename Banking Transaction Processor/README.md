@@ -106,7 +106,7 @@ The application simulates multiple transactions being processed concurrently and
 ---
 
 ## 📝 Author
-- Your Name | Java Developer | GitHub Portfolio
+- Vamshi Nallavalli | Java Developer | https://github.com/thevamshikrishna
 
 ---
 
