@@ -1,0 +1,2 @@
+public class MeanAndMedianOfArray {
+}
