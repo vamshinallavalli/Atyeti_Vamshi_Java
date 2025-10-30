@@ -1,0 +1,324 @@
+Apache Kafka
+================
+=> It is java based messaging technique .. which can be implemented in different
+languages
+
+=> It supports to use different technologies and concepts for messaging activity
+like hadoop, spark, scala and etc ..
+(kafka integration is possible with multiple technologies of java and
+non-java env .. )
+
+=> Apache kafka is all about
+Store + Process + Integrate (Transfer)
+
+=>Kafka is basically used to transfer (integrate) data /messsages between multiple
+complex Apps/systems using Cluster design.
+
+               cluster :: set of similar items is called cluster.
+
+=>Kafka intergration /interaction with non-java applications is possible with the support of REST calls.
+
+=> Kafka is protocol Independent ... we can write code to send messages among the applications
+using http,tcp,ftp and etc .. protocols.
+
+=> Kafka allows to take multiple message broker s/ws (MOM s/ws) at a time as cluster having support for
+Horizontal scaling giving the following advantages ..
+
+                         a) Fast data transfer for large data set /messagess
+                         b) No data loss even one messsage broker s/w or MOM s/w is down
+                            becoz other broker s/w or MOM s/w takes care of messages.
+                            the support of
+                         c) It takes apache zookeeper to handle load balancing among the
+                            multiple instances of message broker s/wsor MOM s/ws
+
+--------------------------------------------------------------------------------------------------------
+
+Kafka Message Broker / Broker server / Mom Server
+=================================================
+It behaves like MOM/Broker to recieve messages/data from sender , to hold them as needed and to deliver to
+Consumer ..
+
+=>When kakfa s/w is started one instance of Message broker will be created automatically .. and it can be increased
+as needed.
+
+=> collection of message broker instances together is called kafka message broker cluster .. and
+we can add any no.of instances in one cluster .. i.e there is no limit to add instances.
+
+=>Apache Zookeepr is resposible to manage message broker instances of cluster by applying Load Balance support
+and it is also called Bootstrap server becoz it is responsbile to create cluster having single instance and increasing
+the instances as needed.
+
+(setup)                     (Zookeeper)
+=>Apache kafka Eco System = Boostrap server + message broker cluster.
+
+=> The apache kafka Message broker gets Message from Sender /Publisher App in Serialized format and
+delivers to consumer /subscriber in DeSerialized format.
+
+
+                               Kafka software
+
++--------------------+                              +--------------------+
+| Sender /Publisher  |                              | Receiver App /     |
+| App                |                              | Consumer App       |
+|   [ Message ]      |                              |   [ Message ]      |
++--------------------+                              +--------------------+
+           |                                                     ^
+           | sends message in Serialized format                  | Reads message in DeSerialized format
+           v                                                     |
+   --------------------------------------------------------------
+   |                        Kafka Software                      |
+   |                    (Kafka ecosystem)                       |
+   |                                                            |
+   |                                                            |
+   |     (Zookeeper)                                            |
+   |   +------------------+                                     |
+   |   | Bootstrap server |                                     |
+   |   +------------------+                                     |
+   |                                                            |
+   |   Kafka Cluster:                                           |
+   |   +-------------------+                                    |
+   |   | MOM / Broker #1   |                                    |
+   |   +-------------------+                                    |
+   |   | MOM / Broker #2   |                                    |
+   |   +-------------------+                                    |
+   |   | MOM / Broker #3   |                                    |
+   |   +-------------------+------------------------------------|---->These MOM services will be created dynamically
+   |                                                            |     on demand.
+   |                                                            |
+   --------------------------------------------------------------
+
+=> kafka do not support PTP model messaging i.e the message broker/MOM can not have Queue as the Destination
+
+=> kafka supports only Pubsub mode messaging i.e the message broker /MOM can have only Topic as the destination.
+
+=> To send message only to one consumer .. we take the support of topic Destination. (In apache kafka)
+
+=>For one message one topic destination (Memory) is created/allocated .. that stores given data /message
+in partiations (huge messsage will be divied into parts/packets). Every paritiation of the message is
+indentified with an index like 0,1 ,2,3 .. These indexes are technically called as offsets.
+
+=> In kafka messaging , For one consimer one message broker instance will be allocated at a time.
+So to send 1 message to 5 consumers we need
+1 Sender --- > 1 message -- > 1 Topic with sections/partiations -> 5 message broker instanaces -- 5 cosumers
+
+=> At a time , the Message broker reads one paritiation data, takes the data , replicates data (cloned data) and sends to
+consumer i.e each large message/data will be stored in multiple partiations of topic and the messge broker reads data
+from all partiations and sends to its respective consumer.
+
+
+                                                Kafka s/w
+                                            (Kafka eco system)
+
++-------------------+
+| Sender/Producer   |
+|   (ABC message)   |
++-------------------+
+           |
+           |     message
+           +-------------------------> |
+                                       |
+                                       v
+----------------------------------------------------------------------------------------------
+|                                                                                             |
+|                                  Zookeeper                                                  |
+|                             (Boot strap server)                                             |
+|---------------------------------------------------------------------------------------------|
+|                                                                                             |
+|                          +--------------------------+                                       |
+|                          |       Topic Memory       |                                       |
+|                          +--------------------------+                                       |
+|                                       |                                                     |
+|         -----------------------------------------------------                               |
+|         |                                                   |                               |
+|         v                                                   v                               |
+|   +---------------------------+                  +---------------------------+              |
+|   |   Topic with sections     |                  |   Topic with sections     |              |
+|   |       (Topic-A)           |                  |       (Topic-B)           |              |
+|   |    [A] [B] [C]            |                  |   [1] [2] [3]             |              |
+|   +---------------------------+                  +---------------------------+              |
+|                                                                                             |
+|                                                                                             |
+|                                                                                             |
+|---------------------------------------------------------------------------------------------|
+|                                                                                             |
+|                  +-----------------------------+                                            |
+|                  |        kafka cluster         |                                           |
+|                  +-----------------------------+                                            |
+|                  |  message broker #1           |                                           |
+|                  |  message broker #2           |                                           |
+|                  |  message broker #3           |                                           |
+|                  +-----------------------------+                                            |
+|                              |                                                              |
+------------------------------------------------------------------------------------------------
+                               |
+        -------------------------------------------------
+        |                      |                        |
+        v                      v                        v
++-------------+     +-------------+        +-------------+
+| consumer #1 |     | consumer #2 |        | consumer #3 |
++-------------+     +-------------+        +-------------+
+
+* Topic sections = topic with partitions
+
+
+=>Each message broker instance is capable of reading message from multiple sections/partiations of
+Topic destinations ... replicates the message parts -- merges the message parts -- sends the message to
+respective consumer.
+
+
+------------------------------------------------------------------------------------------
+                                  Apache Kafka terminologies
+                                  ==========================
+
+Message Broker /MOM :: The mediator, /Middle man that will transfer message to
+consumer by reading message/data from Topic /Topic partiotions
+
+kafka cluster :: collection /group of message broker instances which are created based
+cosumers count is called kafka cluster.
+
+Topic :: The memory that holds message sent by the Producer in parts
+
+Producer :: The App/comp that sends the message to Topic Memory in Serialized format
+
+Consumer :: The App/comp that reads the message from Topic Memory through Message Broker
+in DeSerialized format
+
+offset/index :: The id or index given to partiation message/data in Topic
+
+Zookeeper /BootstapServer :: Handles Message Broker Cluster and Topic Memory .. While managing
+the Message broker cluster it will do Load Balancing.
+
+=>Each message broker instance is capable of reading message from multiple sections/partiations of
+Topic destinations ... replicates the message parts -- merges the message parts -- sends the message to
+respective consumer.
+(a) Define one Producer App
+
+(b) Create either Static message or dynamic message that can be given at runtime
+
+(c) Send message from Producer in the form fo key=value pair format
+here "key" is topic name ( With the given name topic available then uses it other wise new topic will be created )
+"value" is the message/Data
+note :: Producer App sends this data/message in Serilized format.
+
+(d) Start zoo keeper (Boot starp server)
+
+(e) Topic Section will be created in Topic Memory to read the message sent by the producer App ..
+note:
+New Topic section will be created (if not already available) otherwise it will use the existing Topicsection
+
+(f ) Topic section reads message and stores message in different partiations of Topic which will be created as needed.
+(note :: These partiations are identified with indexes /offsets)
+
+(g) creates link b/w Topic section/Topic and Message broker
+
+(h) Define one or more consumer Apps as needed by specifying topic name
+(note :: Based on the given Topic name in cosumer App(s) the link b/w Topic , message broker and Cosumer App
+will be created as needed)
+
+(note :: The zookeeper takes the responsbility of creating messagebroker instances as cluster based on the
+Consumer count and takes care of LB -Load Balancing)
+
+(i) The Message Broker(s) reads the data/messages from Topic Partiations creates cloned/replicate copies
+of these partitaion messages.
+
+j) The message broker(s) sends the cloned partiation message to one or more consumer(s) part by part.
+
+-------------------------------------------------------------------------------
+                Procedure after downloading Kafka to do in cmd
+
+C:\kafka_2.13-3.9.1\bin\windows>
+
+zookeeper-server-start.bat D:\kafka_2.13-3.4.0\config\zookeeper.properties
+
+kafka-server-start.bat D:\kafka_2.13-3.4.0\config\server.properties
+
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic nit-test-tpc
+
+kafka-console-producer.bat --bootstrap-server localhost:9092 --topic nit-test-tpc
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic nit-test-tpc --from-beginning
+
+
+------------------------------------------------------------------------------------------------------------
+                              Begin Learning Kafka
+
+-> if the Zookeeper server start is giving connection timeout exception (connection=1800 ms)
+   then deleted kafka related log files (all folders and files in c:\temp folder).
+
+
+                               Spring Boot + Apache Kafka
+                               ==========================
+
+=> Spring Boot gives built-in support for apache kafka.. It even gives certain objects automatically through AutoConfiguration process
+
+=> if spring-boot-starter-apache-kafka depenecies added to app then we get KafkaTemplate<K, V> class object
+through autoConfiguration.. which internally takes care of creating KafkaProducer, ProducerRecord objects
+that are required to send messages/data.
+
+note: Kafka Producer internally sends the message as ProductRecord object
+
+----------------------------
+In Producer class or comp
+----------------------------
+
+@Autowired
+private KafkaTemplate<String, String> template;
+
+=> we can place @KafkaListener(topicName=".....", groupid=".....") annotation on the method of Listener class to
+   make Message broker to collect the message recived to topic section i.e it internally takes care of creating
+   KafkaConsumer<String, String> obj and ConsumerRecord object.
+
+   => Kafka Consumer internally receives the message as ConsumerRecord Object
+
+----------------------------
+In Listener class
+----------------------------
+
+@KafkaListener(topicName="nit-tpc-fri", groupid="nit-grp1")
+public void readMessage(String msg){
+
+//logic to read the message.
+
+}
+
+=> We need to add @EnableKafka on the top of starter class (main class)
+
+=> we can get message from endusers as request parameter through
+RestController/MicorService of spring MVC/Spring Rest App, So we need to make
+the Producer App taking message through RestController to send kafka setup.
+Similarly we need to read the message from kafka setup using Consumer or
+MessageListener to send to endusers through RestController
+
+          http://localhost:4041/KafkaApp/send?message=welcome
+          http://localhost:4041/KafkaApp/send?message=quotation value 2000
+          http://localhost:4041/KafkaApp/send?message=how are u
+
+------------------------------------------------------------------------------------------------------------
+
+applicaiton.properties
+======================
+
+#server port
+server.port=4041
+
+#context path
+server.servlet.context-path=/RestKafkaApp
+
+#topic name
+app.topic.name=nit-tpc-sat1
+
+#Producer properties
+spring.kafka.producer.bootstrap-servers=localhost:9092
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+
+#Consumer properties
+spring.kafka.consumer.bootstrap-servers=localhost:9092
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
+
+-> Producer /Publisher sends the message to kafka setup as Serialized key=value pair
+
+-> Consumer /Subscriber reads the message from kafka setup as DeSerialized key=value pair
+
