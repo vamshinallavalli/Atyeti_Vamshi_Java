@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +46,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/My_Learnings/Spring Boot"
+    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/My_Learnings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -119,14 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747891670762</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Update">
-      <option name="closed" value="true" />
-      <created>1749786569905</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1749786569905</updated>
     </task>
     <task id="LOCAL-00012" summary="Update">
       <option name="closed" value="true" />
@@ -512,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761801347213</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Update">
+      <option name="closed" value="true" />
+      <created>1762230341629</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1762230341630</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
