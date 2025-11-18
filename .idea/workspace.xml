@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update" />
+    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/Creational/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/Creational/.idea/Creational.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/Creational/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/Creational/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns/Creational/.idea/vcs.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,11 +62,11 @@
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\My_Learnings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\My_Learnings\Multithreading\Made hands dirty with Multithreading for hands-on\practice" />
+      <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\My_Learnings\Multithreading\Made hands dirty with Multithreading for hands-on\Excecutors" />
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\My_Learnings\Spring Boot" />
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\My_Learnings\Core Java, Collections, OOPs, Multithreading &amp; Concurrency" />
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\Atyeti_Vamshi_Java\May Month\Declarations and Access Control (15-05-2025)" />
-      <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\Atyeti_Vamshi_Java\May Month\Lambda Expressions and Streams (13-05-2025)\Medium Problem Statements" />
-      <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\Atyeti_Vamshi_Java\May Month\Lambda Expressions and Streams (13-05-2025)\Basic Problem Statements" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,30 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747891670762</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update">
-      <option name="closed" value="true" />
-      <created>1750044907019</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1750044907019</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update">
-      <option name="closed" value="true" />
-      <created>1750155046251</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1750155046252</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update">
-      <option name="closed" value="true" />
-      <created>1750155109276</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1750155109276</updated>
     </task>
     <task id="LOCAL-00016" summary="Update">
       <option name="closed" value="true" />
@@ -510,7 +493,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762766095236</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Update">
+      <option name="closed" value="true" />
+      <created>1763450146426</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1763450146427</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Update">
+      <option name="closed" value="true" />
+      <created>1763450275609</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1763450275609</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Update">
+      <option name="closed" value="true" />
+      <created>1763450451024</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1763450451024</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
