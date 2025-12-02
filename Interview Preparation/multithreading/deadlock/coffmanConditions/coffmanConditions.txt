@@ -1,0 +1,21 @@
+Mutual Exclusion
+Each phone can be used by only one person at a time (you can’t both talk on the same phone simultaneously).
+
+Hold and Wait
+Person 1 picks up Phone A and starts using it.
+Now he wants to call Person 2, so he starts waiting for Phone B.
+At the same time, Person 2 picks up Phone B and starts using it.
+Now she wants to call Person 1, so she starts waiting for Phone A.
+→ Both are holding one phone and waiting for the other.
+
+No Preemption
+Nobody can forcibly grab the phone from the other person’s hand.
+The phone will be released only when the holder decides to hang up voluntarily.
+
+Circular Wait
+Person 1 is waiting for Phone B (which is held by Person 2)
+Person 2 is waiting for Phone A (which is held by Person 1)
+→ A perfect circle: 1 → 2 → 1
+
+
+Result: Deadlock!

@@ -1,0 +1,178 @@
+What synchronized actually locks
+
+Every Java object has an internal structure called a monitor (part of the object header).
+
+A synchronized block/method locks this monitor.
+
+Example:
+
+synchronized (lock) {
+    // critical section
+}
+
+Internal steps (JVM-level)
+
+When JVM sees synchronized, it generates bytecode instructions:
+
+monitorenter
+
+monitorexit
+
+You can see this via:
+
+javap -c MyClass
+
+Monitor Internals
+
+The monitor has:
+
+Owner → the thread holding the lock
+
+Entry list → threads waiting to acquire
+
+Wait set → threads in wait()
+
+Lock States (Optimized by JVM)
+
+JVM implements lock using thin locks strategy:
+
+Biased Locking → lock is biased toward first thread
+
+Lightweight Locking → CAS operations on object header
+
+Heavyweight Locking → OS mutex, thread suspension
+
+Reentrant Nature
+
+Same thread can acquire lock multiple times → JVM increments recursion count.
+
+⭐ Example — Synchronized Internally
+public void test() {
+    synchronized (this) {
+        System.out.println("Hello");
+    }
+}
+
+
+Bytecode:
+
+0: aload_0
+1: dup
+2: monitorenter
+3: getstatic ...
+4: monitorexit
+
+
+This shows JVM handles locking, not Java code.
+
+🚀 2. ReentrantLock — Internal Working
+4
+Where synchronized uses JVM monitors, ReentrantLock uses AQS
+
+ReentrantLock is implemented using:
+
+AQS = AbstractQueuedSynchronizer
+
+A framework with:
+
+A volatile state (int)
+
+A CLH FIFO queue for waiting threads
+
+CAS operations for acquiring/releasing
+
+Internal state
+state = number of times lock is held (reentrancy count)
+
+How ReentrantLock acquires lock
+
+When you call:
+
+lock.lock();
+
+
+Internally:
+
+Thread tries CAS(state from 0 → 1)
+
+If CAS succeeds → lock acquired
+
+If CAS fails → thread enters CLH queue
+
+Threads in queue use park() / unpark() (no busy waiting)
+
+Reentrancy
+
+If same thread calls lock again:
+
+if (currentThread == ownerThread)
+      state++;
+
+
+Unlike synchronized where monitor keeps recursion count, here state is maintained by AQS.
+
+⭐ Example — ReentrantLock Internally
+ReentrantLock lock = new ReentrantLock();
+
+try {
+    lock.lock();
+    // critical section
+} finally {
+    lock.unlock();
+}
+
+🔍 Differences in Internal Working
+Feature	synchronized	ReentrantLock
+Lock Storage	JVM Object Monitor	AQS (AbstractQueuedSynchronizer)
+Queue Type	Monitor Wait List	CLH Queue (FIFO)
+Locking Mechanism	monitorenter/monitorexit	CAS on volatile state
+Blocking	OS-based	park()/unpark() (more efficient)
+Fairness	Not fair	Fair & Unfair options
+Interruptible Lock	No	Yes (lockInterruptibly())
+🧠 When to Use What?
+✔ Use synchronized When:
+
+Simpler critical sections
+
+You don't need fairness policy
+
+No need for interruptible lock
+
+You want automatic release
+
+✔ Use ReentrantLock When:
+
+Need tryLock()
+
+Need fair locking
+
+Need interruptible locking
+
+Need multiple condition variables
+
+High contention (ReentrantLock is faster under load)
+
+🔥 Internal Working Summary (Interview Perfect Answer)
+synchronized
+
+Managed by JVM monitors
+
+Compiles to monitorenter / monitorexit
+
+Uses biased → lightweight → heavyweight locks
+
+Uses object header (Mark Word)
+
+No fairness / no advanced features
+
+ReentrantLock
+
+Pure Java, built on AQS
+
+CAS-based, uses volatile state
+
+Uses FIFO CLH queue
+
+Uses park() & unpark() for blocking
+
+Supports fairness, interruptible lock, tryLock
