@@ -1,0 +1,35 @@
+What is a deadlock in multithreading?
+A situation where two or more threads are blocked forever, each waiting for the other to release a resource (lock). None can proceed.
+
+
+What are the 4 necessary conditions for a deadlock? (Coffman conditions)
+
+Mutual Exclusion – At least one resource must be held in non-shareable mode.
+
+Hold and Wait – A thread holds at least one resource and is waiting for another.
+
+No Preemption – Resources cannot be forcibly taken; only voluntarily released.
+
+Circular Wait – A circular chain of threads, each waiting for the next.
+
+Give a simple real-world example of deadlock.
+
+Thread A holds Lock1 and waits for Lock2
+Thread B holds Lock2 and waits for Lock1
+→ Both wait forever.
+
+How to prevent deadlock? (Top strategies)
+
+Always acquire locks in a fixed global order (e.g., by object hash or ID)
+Use tryLock() with timeout (java.util.concurrent.locks)
+Avoid nested locks when possible
+Use high-level concurrency utilities (ConcurrentHashMap, BlockingQueue, etc.)
+Minimize lock scope and duration
+Use lock hierarchy and documentation
+
+Quick
+
+Best way to avoid deadlock? → Always lock in the same order.
+Can you have deadlock without synchronized keyword? → Yes, with ReentrantLock, semaphores, etc.
+Does volatile prevent deadlock? → No.
+Does Thread.join() cause deadlock? → Yes, if two threads join each other.
