@@ -22,7 +22,7 @@ public class Deadlock2 {
         });
 
         Thread t2=new Thread(()->{
-            synchronized (lock2){
+            synchronized (lock1){
                 System.out.println("Thread 2 is Acquired lock1");
 
                 try{
@@ -31,7 +31,7 @@ public class Deadlock2 {
                     throw new RuntimeException(e);
                 }
 
-                synchronized (lock1){
+                synchronized (lock2){
                     System.out.println("Thread 2 is Acquired lock2");
                 }
             }

@@ -19,8 +19,18 @@ public class ThreadLifeCycle {
         System.out.println("After join: " + t.getState());       // TERMINATED
 
 
-        t.start();
-        System.out.println("Before start: " + t.getState());     // NEW
+//        t.start();
+//        System.out.println("Before start: " + t.getState());     // NEW
+
+
+        try{
+            if(false){
+                throw new CustomCheckedException("1>2 1 is not grater than 2");
+            }
+
+        }catch (CustomCheckedException e){
+            System.out.println(e.getMessage());
+        }
 
     }
 }
