@@ -11,7 +11,7 @@ public class CountryValidator implements OrderValidatorService {
 
     @Override
     public void validate(Order order) {
-        String country = order.getCountry();                 // ← correct getter
+        String country = order.getCountry();
         if (country == null || !APPROVED_COUNTRIES.contains(country.toUpperCase())) {
             throw new IllegalArgumentException("Country not approved: " + country);
         }

@@ -1,39 +1,18 @@
 package inmemory;
 
 import model.Order;
+import model.TradeType;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.List;
+import java.util.concurrent.PriorityBlockingQueue;
 
-public class OrderBook {
+public interface OrderBook {
 
-    private final PriorityQueue<Order> buyQueue;
-    private final PriorityQueue<Order> sellQueue;
+    PriorityBlockingQueue<Order> getBuyQueue(TradeType tradeType);
 
-    public OrderBook(PriorityQueue<Order> buyQueue, PriorityQueue<Order> sellQueue) {
-        this.buyQueue = buyQueue;
-        this.sellQueue = sellQueue;
-    }
+    PriorityBlockingQueue<Order> getSellQueue(TradeType tradeType);
 
-    public static OrderBook create() {
-        return new OrderBook(
-                new PriorityQueue<>(Comparator
-                        .comparingDouble(Order::getPrice).reversed()
-                        .thenComparing(Order::getTimestamp)),
-                new PriorityQueue<>( Comparator
-                        .comparingDouble(Order::getPrice)
-                        .thenComparing(Order::getTimestamp))
-        );
-    }
+    void addOrder(Order order);
 
-
-    // FIXED RETURN TYPES
-    public Queue<Order> getBuyQueue() {
-        return buyQueue;
-    }
-
-    public Queue<Order> getSellQueue() {
-        return sellQueue;
-    }
+    List<Order> getAllOrders();
 }
