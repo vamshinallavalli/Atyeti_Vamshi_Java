@@ -1,5 +1,6 @@
 Mutual Exclusion
-Each phone can be used by only one person at a time (you can’t both talk on the same phone simultaneously).
+Each phone can be used by only one person at a time
+(you can’t both talk on the same phone simultaneously).
 
 Hold and Wait
 Person 1 picks up Phone A and starts using it.

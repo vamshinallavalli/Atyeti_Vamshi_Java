@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5d9077b-ef56-417b-a342-59be9eba2890" name="Changes" comment="Update" />
+    <list default="true" id="c5d9077b-ef56-417b-a342-59be9eba2890" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/../../Interview Preparation/Object Oriented Programming/encapsulation/UsingEncapsulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Interview Preparation/Object Oriented Programming/hashCodeAndEquals/hashCodeAndEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interview Preparation/multithreading/Concurrent Collections/Using_BlockingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Interview Preparation/multithreading/Concurrent Collections/Using_BlockingQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2025_13_34_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2025_13_34__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atyeti/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atyeti/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resourceslog4.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resourceslog4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atyeti/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atyeti/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atyeti/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atyeti/service/LogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atyeti/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atyeti/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/atyeti/service/DBServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/atyeti/service/DBServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/atyeti/util/FileUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/atyeti/util/FileUtilTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +44,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git&quot;,
-    &quot;accountId&quot;: &quot;ea43ae32-0471-41b9-8d82-224f24842caa&quot;
+    &quot;accountId&quot;: &quot;3dac1d84-2ba1-4faf-ac50-ed47d2260325&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -44,28 +58,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.DBServiceTest.createConnection.executor": "Coverage",
-    "JUnit.DBServiceTest.executor": "Run",
-    "JUnit.DBServiceTest.testCreateConnection.executor": "Run",
-    "JUnit.DBServiceTest.testExecuteUserQuery.executor": "Run",
-    "JUnit.FileUtilTest.testReadDataShouldNotThrowAndReturnCorrectLogs.executor": "Run",
-    "JUnit.LogServiceTest.testListOfLogFiles.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/Atyeti_Vamshi_Java/Core Java/Collections (21, 22, 23-05-2025)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DBServiceTest.createConnection.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.DBServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DBServiceTest.testCreateConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DBServiceTest.testExecuteUserQuery.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileUtilTest.testReadDataShouldNotThrowAndReturnCorrectLogs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogServiceTest.testListOfLogFiles.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/My_Learnings/Pair Programming/LogsAnalyzer&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VamshiNallavalli\OneDrive - Atyeti Inc\Desktop\Atyeti_Vamshi_Java\Pair Programming\LogsAnalyzer\src\main\resources" />
@@ -81,7 +95,7 @@
       <recent name="com.atyeti.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogServiceTest.testListOfLogFiles">
+  <component name="RunManager" selected="JUnit.DBServiceTest">
     <configuration name="DBServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LogsAnalyzer" />
       <extension name="coverage">

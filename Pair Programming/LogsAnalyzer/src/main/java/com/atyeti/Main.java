@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Main {
-    public static final String directoryPath = "C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Vamshi_Java\\Pair Programming\\LogsAnalyzer\\src\\main\\resources";
+    public static final String directoryPath = "C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\My_Learnings\\Pair Programming\\LogsAnalyzer\\src\\main\\resources";
     private static final LogService logService = new LogService();
     private static final DBService dbService = new DBService();
 
@@ -26,7 +26,7 @@ public class Main {
         // System.out.println(frequencies);
 
         // Creating connection with database
-        dbService.createConnection("jdbc:mysql://localhost:3306/log_analyzer", "root", "42379");
+        dbService.createConnection("jdbc:mysql://localhost:3306/log_analyzer", "root", "Vamshi@42379");
 
         // Store Updated data or Processed data into database
 
