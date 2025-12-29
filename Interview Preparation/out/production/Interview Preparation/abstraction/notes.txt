@@ -1,0 +1,33 @@
+### Code Summary
+
+| Feature                  | Abstract Class Example                | Interface Example                     |
+|--------------------------|---------------------------------------|---------------------------------------|
+| Class name               | `UsingAbstract` (abstract)            | `UsingInterface` (interface)          |
+| Method `hello()`         | Has **default implementation**        | **No implementation** (must override) |
+| Implementing class       | `Student extends UsingAbstract`       | `Students implements UsingInterface`  |
+| Can object call hello()? | Yes – inherits the method             | Yes – but **must** provide body       |
+
+
+### Key Differences & Specialties
+
+| Feature                          | Abstract Class                                        | Interface                                              |
+|----------------------------------|-------------------------------------------------------|--------------------------------------------------------|
+| Can have method with body        | Yes (normal, abstract, or with implementation)       | Java 8+: `default` methods Java 9+: `private` methods |
+| Can have instance variables      | Yes                                                   | No (only `public static final`)                        |
+| Can have constructors            | Yes                                                   | No                                                     |
+| Multiple inheritance             | Only **one** abstract class                           | **Multiple** interfaces allowed                        |
+| Access modifiers flexibility     | `public`, `protected`, `private`, etc.                | Implicitly `public` (except `private` from Java 9+)    |
+| Extends/Implements               | `extends`                                             | `implements`                                           |
+| Designed for                     | "Is-a" relationship (inheritance hierarchy)          | "Can-do" / behavior contract                           |
+| Best used when                   | Share code among closely related classes              | Unrelated classes need same behavior                   |
+
+
+### Quick Decision Table
+
+| Scenario                                                  | Best Choice         | Reason                                                                 |
+|-----------------------------------------------------------|---------------------|-------------------------------------------------------------------------|
+| Provide common code that most subclasses reuse as-is     | Abstract Class      | No need to override, automatic inheritance                             |
+| Many unrelated classes need the same behavior             | Interface           | Supports multiple inheritance                                          |
+| You may add new methods later without breaking old code  | Interface (default) | Can add `default` method safely (Java 8+)                              |
+| Classes share state + behavior in a clear hierarchy       | Abstract Class      | Can have fields, constructors, protected members                       |
+| Modeling capabilities/roles (Flyable, Runnable, etc.)    | Interface           | Clean contract, easy to combine multiple abilities                     |

@@ -14,13 +14,17 @@ public class SimpleOrderBook implements OrderBook {
     private final Map<TradeType, OrderBookSide> books = new ConcurrentHashMap<>();
     private final List<Order> allSubmittedOrders = new CopyOnWriteArrayList<>();
 
+    // We use PriorityBlockingQueue with custom comparators to maintain price-time priority.
+
     public static class OrderBookSide {
 
+        //BUY orders are sorted by highest price first, then FIFO.
         public final PriorityBlockingQueue<Order> buyQueue =
                 new PriorityBlockingQueue<>(100,
                         Comparator.comparingDouble(Order::getPrice).reversed()
                                 .thenComparing(Order::getTimestamp));
 
+        //SELL orders are sorted by lowest price first, then FIFO.
         public final PriorityBlockingQueue<Order> sellQueue =
                 new PriorityBlockingQueue<>(100,
                         Comparator.comparingDouble(Order::getPrice)

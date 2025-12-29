@@ -1,0 +1,165 @@
+ When it comes to threads, very little is guaranteed.
+
+ Thread - Java thread is the smallest unit of execution within a program.
+          It is a lightweight subprocess that runs independently but shares
+          the same memory space as the process, allowing multiple tasks to execute concurrently.
+
+
+          Thread Creation
+
+                                   Thread
+                       ______________|______________
+                      |                             |
+               extends|                             |implements
+                      |                             |
+                  Thread                         Runnable
+                      |                             |
+                      v                             v
+           +-----------------+            +----------------------+
+           |  Subclass of    |            |   Class implements   |
+           |    Thread       |            |      Runnable        |
+           +-----------------+            +----------------------+
+                      |                             |
+                      | override run()              | override run()
+                      |                             |
+                      | new MyThread()              | new Thread(new MyRunnable())
+                      |                             |
+                      v                             v
+                 myThread.start()           thread.start()
+
+
+
+          Thread Life Cycle
+
+
+                          +----------------+
+                          |     New        |
+                          +----------------+
+                                  |
+                          New Thread()
+                                  |
+                                  v
+                          +----------------+
+                          |   Runnable     |
+                          +----------------+
+                                  |
+                               start()
+                                  |
+                                  v
+                          +----------------+
+                          |    Running     |
+                          +----------------+
+                                  |
+                    --------------------------------
+                    |                              |
+                run()                         sleep(), wait()
+                    |                              |
+                    v                              v
+            End of execution               +----------------+
+                    |                     |    Waiting     |
+                    |                     +----------------+
+                    |                              |
+                    |------------------------------|
+                                  |
+                                  v
+                          +----------------+
+                          |     Dead       |
+                          +----------------+
+
+ A thread in Java begins as an instance of java.lang.Thread.
+
+ - start()
+ - yield()
+ - sleep()
+ - run()
+
+
+
+ -----------------------------------------------------------------------------------------
+ Feature                | WHY (Purpose)                          | WHERE (Use Case)
+ -----------------------------------------------------------------------------------------
+ Async                 | Non-blocking tasks                      | APIs, UI, file, DB calls
+ Atomic                | Lock-free thread-safe variables         | Counters, shared flags
+ Concurrent Collections| Thread-safe structures                  | Servers, messaging queues
+ Executors             | Manage thread pools                     | Web apps, async tasks
+ Locks                 | Advanced thread control                 | Timed locks, fairness
+ Parallelism           | Use multi-core CPUs                     | Heavy computations
+ Scheduling            | Run tasks automatically                 | Cron jobs, background tasks
+ Synchronizers         | Coordinate multiple threads             | Latches, barriers, semaphores
+ -----------------------------------------------------------------------------------------
+
+
+✅ 1. Thread (Oldest)
+
+Basic thread creation.
+
+✅ 2. Runnable (Improved Task Representation)
+
+Task separated from thread.
+
+✅ 3. Executors / ExecutorService (Thread Pooling)
+
+Manages a pool of threads.
+
+⭐ AFTER EXECUTORS → NEXT LEVEL CONCURRENCY COMPONENTS
+✅ 4. Callable (returns value + throws exception)
+
+Better than Runnable because it can return data.
+
+Callable<Integer> task = () -> 10;
+
+✅ 5. Future (Result of Callable)
+
+Used to get the result.
+
+Future<Integer> f = service.submit(task);
+
+✅ 6. FutureTask (Hybrid: Runnable + Future)
+
+Used to wrap tasks, mostly for advanced frameworks.
+
+⭐ MODERN CONCURRENCY (Java 8+ and Java 21)
+✅ 7. CompletableFuture (Asynchronous Programming)
+
+Non-blocking, pipelines, async tasks.
+
+CompletableFuture.supplyAsync(() -> "Hello");
+
+✅ 8. Locks (ReentrantLock, ReadWriteLock)
+
+Advanced control instead of synchronized.
+
+✅ 9. Atomic Classes (AtomicInteger, AtomicReference)
+
+Lock-free thread-safe operations.
+
+✅ 10. Concurrent Collections
+
+ConcurrentHashMap
+
+CopyOnWriteArrayList
+
+BlockingQueue
+
+ConcurrentLinkedQueue
+
+✅ 11. Synchronizers
+
+Tools for coordinating threads:
+
+CountDownLatch
+
+CyclicBarrier
+
+Semaphore
+
+Phaser
+
+Exchanger
+
+⭐ MODERN ERA (Java 19–21)
+✅ 12. Virtual Threads (Project Loom)
+
+Lightweight threads, millions of threads possible.
+
+Thread.startVirtualThread(() -> doWork());

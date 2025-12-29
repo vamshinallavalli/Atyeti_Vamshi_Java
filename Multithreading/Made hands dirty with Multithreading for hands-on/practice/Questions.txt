@@ -1,0 +1,31 @@
+🧠 Thread & Runnable Coding Questions
+
+Create a thread that prints numbers from 1 to 10 with a 1-second delay between each number.
+
+Implement the Runnable interface to print the squares of numbers 1–10 using a separate thread.
+
+Write a program to create two threads that print “Ping” and “Pong” alternately.
+
+Use Thread.join() to ensure that one thread finishes execution before another starts.
+
+Write a program that starts a thread and then interrupts it after 3 seconds. Handle the InterruptedException properly.
+
+Create a program with two threads updating a shared counter variable — demonstrate a race condition.
+
+Fix the above race condition using synchronized blocks.
+
+Create a bank account simulation with deposit and withdraw methods, and multiple threads performing transactions safely.
+
+Demonstrate the use of Thread.sleep(), Thread.yield(), and Thread.setPriority() in separate examples.
+
+Write a producer-consumer program using a shared buffer and wait/notify for coordination.
+
+Create a thread pool using ExecutorService to execute 5 Runnable tasks concurrently.
+
+Write a program to simulate a ticket booking system where multiple threads try to book tickets — ensure thread safety.
+
+Implement a deadlock scenario using two threads and two locks, then modify the code to fix the deadlock.
+
+Demonstrate how to use a CountDownLatch to make the main thread wait until multiple threads finish their work.
+
+Create a program where multiple threads increment and print a shared AtomicInteger safely.

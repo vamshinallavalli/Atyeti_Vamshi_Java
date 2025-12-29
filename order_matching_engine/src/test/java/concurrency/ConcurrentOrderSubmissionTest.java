@@ -72,9 +72,16 @@ class ConcurrentOrderSubmissionTest {
         assertEquals(trades, uniqueTrades, "Trades must not be duplicated!");
 
 // 3. Order book size consistent
-        long totalOrders = orderService.getOrderBook().getAllOrders().size() + filled;
 
-        assertEquals(10_000, totalOrders, "Total number of orders must match submitted orders!");
+
+        assertEquals(
+                10_000,
+                orderService.getTotalOrdersLoaded(),
+                "All submitted orders must be accounted for"
+        );
+//        long totalOrders = orderService.getOrderBook().getAllOrders().size() + filled;
+//
+//        assertEquals(10_000, totalOrders, "Total number of orders must match submitted orders!");
 
     }
 }

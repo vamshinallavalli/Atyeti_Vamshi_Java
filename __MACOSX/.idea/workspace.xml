@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a2acedf-a55a-45b6-b293-55c59fe69199" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Made hands dirty with Multithreading for hands-on/synchronized/DeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Made hands dirty with Multithreading for hands-on/synchronized/Deadlock1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Made hands dirty with Multithreading for hands-on/synchronized/MultiJoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Async/Async_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Async/CompletableFuture_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Atomic/AutomicInteger_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Atomic/AutomicLong_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/ConcurrentCollections/BlockingQueue_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/ConcurrentCollections/ConcurrentHashMap_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/ConcurrentCollections/CopyOnWriteArrayList_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/DeadLock/DeadLock1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/DeadLock/DeadLock2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Executors/ExecutorsService_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Locks/Lock_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Notes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Parallelism/ForkJoin_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/RunnableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/Scheduling/ScheduledExecutorService_Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multithreading/Pair Programming/Thread and Multithreading/ThreadExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Atyeti_Vamshi_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Atyeti_Vamshi_Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vamshinallavalli"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git",
+    "accountId": "3dac1d84-2ba1-4faf-ac50-ed47d2260325"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="35ujGxwPelbvW0RCf917RFaIJi8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/My_Learnings/__MACOSX"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a2acedf-a55a-45b6-b293-55c59fe69199" name="Changes" comment="" />
+      <created>1763966759036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763966759036</updated>
+    </task>
+    <servers />
+  </component>
+</project>

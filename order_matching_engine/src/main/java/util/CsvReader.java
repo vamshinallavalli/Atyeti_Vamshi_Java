@@ -38,7 +38,7 @@ public class CsvReader {
                     continue;
                 }
 
-                String[] parts = line.split(",", -1); // -1 keeps empty trailing fields
+                String[] parts = line.split(",", -1);
 
                 if (parts.length < 8) {
                     log.warn("Line {}: Invalid format...", lineNumber);
