@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class ReportService {
 
     private static final String REPORT_DIR =
-            "C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\My_Learnings\\order_matching_engine\\src\\main\\java\\reports";
+            "C:\\Users\\VamshiNallavalli\\OneDrive - Atyeti Inc\\Desktop\\My_Learnings\\order_matching_engine\\reports";
 
     private static final String CSV_HEADER =
             "OrderId,TraderId,TradeType,OrderType,Price,Quantity,RemainingQuantity,Status,Timestamp";

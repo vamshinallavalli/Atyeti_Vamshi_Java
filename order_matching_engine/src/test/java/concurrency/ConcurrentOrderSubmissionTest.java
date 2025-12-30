@@ -85,3 +85,23 @@ class ConcurrentOrderSubmissionTest {
 
     }
 }
+
+
+/*
+
+What this test simulates
+100 concurrent traders
+10,000 total orders
+Orders submitted at the same time
+
+
+Each thread behaves like a real trader placing orders simultaneously.
+
+This creates:
+
+High contention
+
+Overlapping execution
+
+Realistic race-condition scenarios
+ */

@@ -11,8 +11,7 @@ import org.slf4j.LoggerFactory;
 import reports.ReportService;
 import service.matching.Matching;
 import service.matching.MatchingService;
-import service.validator.OrderValidationEngine;
-import service.validator.OrderValidatorService;
+import service.validator.*;
 
 import java.sql.Timestamp;
 import java.util.Set;
@@ -26,7 +25,9 @@ public class OrderService {
     private final OrderBook orderBook;
     private final InMemoryTrade tradeBook;
     private final Matching matchingStrategy;
-    private final OrderValidatorService validator;
+    //private final OrderValidatorService validator;
+    private final Set<OrderValidatorService> validators;
+
 
     // Metrics
     private int totalOrdersLoaded = 0;
@@ -40,7 +41,13 @@ public class OrderService {
     public OrderService() {
         this.orderBook = new SimpleOrderBook();
         this.tradeBook = new InMemoryTrade();
-        this.validator = new OrderValidationEngine();
+        //this.validator = new OrderValidationEngine();
+        this.validators = Set.of(
+                new DataValidator(),
+                new CountryValidator(),
+                new AmountValidator()
+        );
+
         this.matchingStrategy = new MatchingService(orderBook, tradeBook);
     }
 
@@ -71,9 +78,11 @@ public class OrderService {
                 country, timestamp);
 
         try {
-            validator.validate(order);
-            validOrders++;
+            for (OrderValidatorService v : validators) {
+                v.validate(order);
+            }
 
+            validOrders++;
             matchingStrategy.match(order);
             return order;
 
@@ -83,6 +92,7 @@ public class OrderService {
             log.warn("REJECTED {}: {}", orderId, e.getMessage());
             return order;
         }
+
     }
 
     // CSV loader / reuse
@@ -118,3 +128,6 @@ public class OrderService {
         reportService.generateAllCsvReports();
     }
 }
+
+
+

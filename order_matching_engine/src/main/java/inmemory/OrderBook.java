@@ -16,3 +16,10 @@ public interface OrderBook {
 
     List<Order> getAllOrders();
 }
+
+/*
+
+OrderBook → stores pending BUY & SELL orders
+
+TradeBook → stores executed trades
+ */
