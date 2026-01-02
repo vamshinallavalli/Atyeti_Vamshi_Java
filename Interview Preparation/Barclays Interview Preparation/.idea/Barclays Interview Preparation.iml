@@ -6,8 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Collections" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Scenario Based Questions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Multi Thrading" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Streams" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Data Structures And Algorithms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Functional Interface" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Multi Threading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ObjectLevelMethods" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

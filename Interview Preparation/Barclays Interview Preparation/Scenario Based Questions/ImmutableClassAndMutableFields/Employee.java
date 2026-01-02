@@ -1,6 +1,5 @@
 package ImmutableClassAndMutableFields;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public final class Employee {
