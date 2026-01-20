@@ -1,0 +1,2 @@
+public class UsingClone {
+}

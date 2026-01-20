@@ -12,8 +12,8 @@ public final class Employee {
     public Employee(String id, String name, Date joiningDate, double salary) {
         this.id = id;
         this.name = name;
-        this.joiningDate = new Date(joiningDate.getTime());
-        this.salary = new Double(salary);
+        this.joiningDate = joiningDate;
+        this.salary = salary;
     }
 
     public String getId() {
@@ -29,7 +29,7 @@ public final class Employee {
     }
 
     public double getSalary() {
-        return new Double(salary);
+        return salary;
     }
 
     @Override

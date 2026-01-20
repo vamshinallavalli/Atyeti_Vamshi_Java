@@ -11,6 +11,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Functional Interface" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Multi Threading" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ObjectLevelMethods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExceptionHandling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rough" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Output Based Questions" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
