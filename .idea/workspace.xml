@@ -4,7 +4,330 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update" />
+    <list default="true" id="5ef5b09d-b94a-4eef-ac28-720aee1b43cb" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/Concurrency/CreatingThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/CreatingThreadUsingRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/DiffBetweenRunStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/JoinMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/ProducerConsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/SynchronizationAvoidRaceCond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Tricky1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Tricky2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Tricky3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Tricky4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/Tricky5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/ArrayDequeue/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/ArrayDequeue/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparable/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/.idea/Comparator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/out/production/Comparator/.idea/Comparator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/out/production/Comparator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/out/production/Comparator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/Comparator/out/production/Comparator/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/HashMap/Employee4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/HashMap/HashMap4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/HashMap/LearningHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/HashMap/VinayakQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/ArrayDequeue/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/ArrayDequeue/Test1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/ArrayList/ConcurrentModificationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/ArrayList/UsingArrayList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailFast/UsingArrayList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailFast/UsingHashMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailFast/UsingHashSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailFast/UsingTreeMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailSafe/ConcurrentHashMap1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailSafe/CopyOnWriteArrayList1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/FailSafe/CopyOnWriteTreeSet1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/Employee1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/Employee4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/Example.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/HashMap2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/HashMap3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashMap/UsingHashMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashSet/HashSet1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/HashTable/UsingHashTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/Iterator/Iterator1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/Iterator/Iterator2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/Questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Collections/out/production/Collections/TreeMap/UsingComparable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/.idea/Concurrency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/CreatingDeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/ExceutorService/ExecutorService1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/FutureExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/PrintOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/ProducerConsmerProblem/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/ProducerConsmerProblem/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/ProducerConsmerProblem/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/ProducerConsmerProblem/SharedBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Concurrency/Programs/EvenAndOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/.idea/Stack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Methods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Rough.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Stack2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/StackUsingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Data Structures And Algorithms/Stack/StackOutputBasedQuestions/ValidParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/ConstructorChaining.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Java Interview Preparation Pdf Questions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/CheckAllEvenOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/DecimalsInReverseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/GetDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/LongestStringUsingStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/MaxNumberInList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/RemoveDuplicatesWithOutDistinct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/SortBasedOnLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/Streams/SortInDescendingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/A1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/B.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/Streams/GetDuplicates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/Streams/LongestStringUsingStreams.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Java Interview Preparation Pdf Questions/out/production/Java Interview Preparation Pdf Questions/Streams/MaxNumberInList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/Locks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/PracticeLocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/ReentrantLockDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/SharedResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/WhyLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/BankAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/Counter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/Demo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/Demo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/Locks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/SharedResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Locks/out/production/Locks/WhyLock$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Multi Threading/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/Aggregation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/AssociationDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/Composition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/HasARelationTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/Has_A_Relation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/Is_A_Relation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/Animal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/Dog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Inheritence/out/production/Inheritence/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/.idea/Overloading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/AccessModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/ConstructorOverload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/ExactPreferred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/FloatvsLong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/IntegerVsdouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/IntegervsLong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/Intvslong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/NullAmbiguity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/ObjectVsPrimitive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/OverloadMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/OverloadStatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/Overriding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/PrimitiveWideningVsAtoBoxing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/Rough.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/WrapperVsObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/.idea/Overloading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/AccessModifier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/Child.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/ConstructorOverload.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/ExactPreferred.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/FloatvsLong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/IntegerVsdouble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/IntegervsLong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/Intvslong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/OverloadStatic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/Parent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/PrimitiveWideningVsAtoBoxing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/Rough.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overloading/out/production/Overloading/WrapperVsObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/.idea/Overriding.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/Covariant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/.idea/Overriding.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/Child.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Oops/Polymorphism/Overriding/out/production/Overriding/Parent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/Output Based Questions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/Output Based Questions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/OutputBased_0.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/OutputBased_1$MyFunc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/OutputBased_12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/OutputBased_13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Output Based Questions/out/production/Output Based Questions/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/ImmutableClassAndMutableFields/Employee1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/ImmutableClassAndMutableFields/ImmutableClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Interview/HashMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Interview/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/ImmutableClassAndMutableFields/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/ImmutableClassAndMutableFields/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/InitializationOrder/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/InitializationOrder/Numbers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Interview/HashMapExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario Based Questions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_1/DiscountCalculatorUsingIfElse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_10/IncrementTheSharedCounterWithThreads.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_3/TrafficLightOption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_4/CardBilling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_4/Items.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_6/EvenOddUsingTwoThreads.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_7/AlphaNumericSequence.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_8/Producer1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/out/production/Scenario Based Questions/Scenario_8/SharedQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/src/main/java/com/learning/LearningSpringBoot/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/src/main/java/com/learning/LearningSpringBoot/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/src/main/java/com/learning/LearningSpringBoot/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/src/main/java/com/learning/LearningSpringBoot/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/LearningSpringBoot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/src/main/java/com/restapi/RESTAPI/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/src/main/java/com/restapi/RESTAPI/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/src/main/java/com/restapi/RESTAPI/RandomClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/src/main/java/com/restapi/RESTAPI/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/RESTAPI/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/SpringBoot/demo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/CovertListOfSentencetowords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/Duplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/Emplyee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/KthFrequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/NonRepeatedCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/SortOnlyOddNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Interview/SumOfAllEvenUsingReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/Streams.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Easy/EvenNumbers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Easy/ListOFStringsToThereLengths.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Easy/ListWithDistinct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Easy/StringToUpperUsingMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Easy/UseanyMatchToFindNegative.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Intermediate/AverageOfList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Intermediate/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Intermediate/EmployeeFilterSalaryGreaterThan50.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Intermediate/RemoveAllNull.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Intermediate/SortEmployeeByNameAndThenWithSalary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/Duplicates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/EvenNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/KthFrequency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/NonRepeatedCharacter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/SortOnlyOddNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Interview/SumOfAllEvenUsingReduce.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/Streams.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/out/production/Streams/StreamsQuestions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/testing/KthElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/testing/SentenceToWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/testing/SortOnlyOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/Streams/testing/SumOfAllEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/Questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/StreamsQuestions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/out/production/Collections/Questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/out/production/Barclays Interview Preparation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pair Programming/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pair Programming/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pair Programming/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/.idea/synchronized.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Counter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/CreatingThreadUsingRunnable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/DeadLock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/DiffBetweenRunStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/JoinMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/MultiJoinExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Print1to10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/ProducerConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Shared.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/SynchronizationAvoidRaceCond.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/SynchronizedBankAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/ThreadSafeCounter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Tricky1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Tricky3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/Tricky5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/out/production/synchronized/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/out/production/synchronized/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/out/production/synchronized/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Atyeti_Vamshi_Java/out/production/synchronized/.idea/synchronized.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Atyeti_Vamshi_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Atyeti_Vamshi_Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/.idea/Barclays Interview Preparation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview Preparation/Barclays Interview Preparation/.idea/Barclays Interview Preparation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview Preparation/Collections/CustomObjectSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading/Made hands dirty with Multithreading for hands-on/synchronized/CustomObjectSorting.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,8 +369,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.CreatingThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CreatingThreadUsingRunnable.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CustomObjectSorting.executor&quot;: &quot;Run&quot;,
     &quot;Application.DeadLock.executor&quot;: &quot;Run&quot;,
     &quot;Application.Deadlock1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JoinMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MultiJoinExample.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
@@ -127,14 +455,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747891670762</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Update">
-      <option name="closed" value="true" />
-      <created>1751259779613</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1751259779613</updated>
     </task>
     <task id="LOCAL-00022" summary="Update">
       <option name="closed" value="true" />
@@ -520,7 +840,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766998905678</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Update">
+      <option name="closed" value="true" />
+      <created>1768883150916</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1768883150917</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
