@@ -1,0 +1,49 @@
+LEVEL 1 — EASY / BASICS
+Given a list of integers, return a list of even numbers using streams.
+Find all strings starting with the letter “A” from a list of strings.
+Convert a list of strings to uppercase using map().
+Given a list of numbers, return a list with distinct elements using distinct().
+Sort a list of numbers in ascending and descending order using streams.
+Count how many strings in a list have length greater than 5.
+Check if a number list contains any negative number using anyMatch().
+Check if all numbers are positive using allMatch().
+Find the first element of a list using findFirst().
+Convert a list of strings into their lengths using streams.
+LEVEL 2 — INTERMEDIATE / MOST ASKED
+Given a list of integers, find the maximum and minimum using streams.
+Find the second highest number using streams.
+Find the sum of all even numbers using reduce().
+Find the average of a list of numbers.
+Remove all null values from a list using streams.
+Given a list of employees, filter all employees whose salary > 50k.
+Sort employees by name and then by salary.
+Count employees working in each department (group by department).
+Find the total salary paid per department.
+Find employee with the highest salary using streams.
+LEVEL 3 — ADVANCED / COMPANY LEVEL
+Convert a list of sentences into a list of individual words using flatMap().
+Find duplicate elements in a list using streams.
+Remove duplicate elements without using Set.
+Given a list of numbers, separate them into odd & even using partitioningBy().
+Find the element that appears most frequently in a list.
+Given a map<String, List<Integer>>, flatten all values into a single list.
+Convert list → map with key=name, value=salary using Collectors.toMap().
+Handle duplicate keys when converting to map (merge function).
+Reverse sort by multiple fields (salary desc, age asc).
+Convert a list of objects to a CSV string using joining().
+LEVEL 4 — DEEP STREAMS & TRICKY
+Find the longest string in a list.
+Find the shortest string.
+Given list of employees, group by department → inside each dept sort by salary.
+Given list of products, get top 3 most expensive.
+Join names of employees into a single comma-separated string.
+Convert a primitive stream to wrapper stream (int → Integer).
+Convert wrapper stream to primitive stream (Integer → int).
+Implement pagination logic using streams (skip, limit).
+Check if list is empty using streams (no if condition).
+Find sum of squares of all numbers.
+Find product of all numbers using reduce.
+Find employees whose joining year = current year using date + streams.
+Find the difference between highest and lowest salary using streams.
+Implement custom comparator inside stream.
+Collect employees into TreeMap sorted by name

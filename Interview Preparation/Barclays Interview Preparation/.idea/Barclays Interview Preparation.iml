@@ -14,6 +14,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ExceptionHandling" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Rough" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Output Based Questions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Concurrency" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Locks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SpringBoot/demo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java Interview Preparation Pdf Questions" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="326d9cc9-8389-4fb7-a3cf-5c8200df647d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsingClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsingEquals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsingFinalize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsingHashcode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsinggetClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/ObjectLevelMethods/UsingtoString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_1/DiscountCalculatorUsingIfElse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_1/DiscountCalculatorUsingSwitch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_10/IncrementTheSharedCounterWithThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_2/AtmOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_3/TrafficLightOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_4/CardBilling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_4/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_5/PasswordChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_6/EvenOddUsingTwoThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_7/AlphaNumericSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario_7/AlphaNumericSequenceUsingObjectLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/ImmutableClassAndMutableFields/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/ImmutableClassAndMutableFields/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interview Preparation/Barclays Interview Preparation/Scenario Based Questions/Scenario1.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vamshinallavalli"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vamshinallavalli/Atyeti_Vamshi_Java.git",
+    "accountId": "3dac1d84-2ba1-4faf-ac50-ed47d2260325"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="37sc3NO5eTEDn70m9UuR9txgrar" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/VamshiNallavalli/OneDrive - Atyeti Inc/Desktop/My_Learnings/Pair Programming"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="326d9cc9-8389-4fb7-a3cf-5c8200df647d" name="Changes" comment="" />
+      <created>1767695019131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767695019131</updated>
+    </task>
+    <servers />
+  </component>
+</project>
