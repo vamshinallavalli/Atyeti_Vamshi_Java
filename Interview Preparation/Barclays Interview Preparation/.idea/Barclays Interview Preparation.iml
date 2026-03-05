@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Locks" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SpringBoot/demo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java Interview Preparation Pdf Questions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Oops" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

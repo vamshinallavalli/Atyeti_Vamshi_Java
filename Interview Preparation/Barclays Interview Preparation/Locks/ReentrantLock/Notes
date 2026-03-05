@@ -1,0 +1,175 @@
+================= ReentrantLock Methods & Use Cases =================
+
+1) void lock()
+Use Case:
+- Standard locking for critical section.
+- When waiting indefinitely is acceptable.
+Notes:
+- Blocks until lock is available.
+- Not interruptible.
+
+
+2) void lockInterruptibly() throws InterruptedException
+Use Case:
+- When waiting thread should be cancellable.
+- Useful in responsive systems (server/UI).
+Notes:
+- Blocks until available.
+- Can be interrupted while waiting.
+
+
+3) boolean tryLock()
+Use Case:
+- Deadlock avoidance.
+- Performance-sensitive operations.
+- When you don’t want to wait.
+Notes:
+- Returns immediately.
+- true → lock acquired
+- false → lock not acquired
+
+
+4) boolean tryLock(long timeout, TimeUnit unit)
+   throws InterruptedException
+Use Case:
+- Wait only for limited time.
+- Prevent indefinite blocking.
+- Resource pooling / distributed systems.
+Notes:
+- Waits up to timeout.
+- Interruptible.
+- Returns true/false.
+
+
+5) void unlock()
+Use Case:
+- Releases the lock.
+Best Practice:
+    lock.lock();
+    try {
+        // critical section
+    } finally {
+        lock.unlock();
+    }
+Notes:
+- Must be called by owning thread only.
+
+
+6) Condition newCondition()
+Use Case:
+- Multiple wait-sets.
+- Advanced producer-consumer.
+- Replacement for wait()/notify().
+Used With:
+- await()
+- signal()
+- signalAll()
+
+
+7) boolean isLocked()
+Use Case:
+- Monitoring / debugging.
+- Check if any thread holds lock.
+
+
+8) boolean isHeldByCurrentThread()
+Use Case:
+- Safety check before unlock().
+- Debug reentrancy.
+
+
+9) int getHoldCount()
+Use Case:
+- Check reentrancy depth.
+- Debug nested locking.
+
+
+10) boolean hasQueuedThreads()
+Use Case:
+- Detect contention.
+- Check if threads are waiting.
+
+
+11) int getQueueLength()
+Use Case:
+- Approximate number of waiting threads.
+- Performance monitoring.
+
+
+12) Collection<Thread> getQueuedThreads()
+Use Case:
+- Inspect waiting threads (debugging).
+
+
+13) boolean hasWaiters(Condition condition)
+Use Case:
+- Check if threads waiting on specific condition.
+
+
+14) int getWaitQueueLength(Condition condition)
+Use Case:
+- Approximate number of threads waiting on condition.
+
+======================================================================
+
+Reentrancy (How It Works)
+
+In ReentrantLock:
+
+if (currentThread == owner)
+    state++;
+
+Same thread can acquire multiple times.
+
+state tracks hold count.
+
+unlock() decrements state.
+
+Lock released only when state == 0.
+
+
+
+Lock Acquisition Flow (Exclusive Mode)
+
+Example: ReentrantLock.lock()
+
+Step 1: Try Fast Path
+if (compareAndSetState(0, 1))
+
+✔ If success → thread gets lock
+❌ If fails → go to queue
+
+Step 2: Add to Queue
+
+Thread creates Node and joins tail:
+
+... → Tail
+          ↓
+     New Node (CAS tail update)
+Step 3: Park Thread
+
+Thread waits using:
+
+LockSupport.park()
+
+Thread becomes BLOCKED.
+
+Step 4: Unlocking
+
+When owner calls unlock():
+
+setState(0);
+unparkSuccessor(head);
+
+Next thread is unparked using:
+
+LockSupport.unpark(thread);
+
+
+
+
+
+
+
+
+
