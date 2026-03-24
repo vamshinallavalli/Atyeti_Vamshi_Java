@@ -1,0 +1,19 @@
+{
+  "employeeId": "1002",
+  "personalInfo": {
+    "name": "Anjali Sharma",
+    "age": 28,
+    "contacts": [
+      {
+        "type": "email",
+        "value": "anjali.sharma@example.com"
+      }
+    ]
+  },
+  "jobDetails": {
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 70000,
+    "projects": []
+  }
+}

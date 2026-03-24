@@ -1,0 +1,34 @@
+{
+  "employeeId": "1001",
+  "personalInfo": {
+    "name": "Ravi Kumar",
+    "age": 30,
+    "contacts": [
+      {
+        "type": "email",
+        "value": "ravi.kumar@example.com"
+      },
+      {
+        "type": "phone",
+        "value": "9876543210"
+      }
+    ]
+  },
+  "jobDetails": {
+    "department": "Engineering",
+    "role": "Software Engineer",
+    "salary": 80000,
+    "projects": [
+      {
+        "projectId": "P101",
+        "name": "Billing System",
+        "status": "active"
+      },
+      {
+        "projectId": "P102",
+        "name": "Inventory System",
+        "status": "completed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+1001,I,personalInfo.name,,Arjun Reddy
+1001,I,personalInfo.age,,27
+1001,I,personalInfo.contacts[0].type,,email
+1001,I,personalInfo.contacts[0].value,,arjun.reddy@techmail.com
+1001,I,personalInfo.contacts[1].type,,phone
+1001,I,personalInfo.contacts[1].value,,9123456780
+1001,I,jobDetails.department,,Product
+1001,I,jobDetails.role,,Backend Developer
+1001,I,jobDetails.salary,,95000
+1001,I,jobDetails.projects[0].projectId,,P201
+1001,I,jobDetails.projects[0].name,,Payment Gateway
+1001,I,jobDetails.projects[0].status,,active
+1001,I,jobDetails.projects[1].projectId,,P305
+1001,I,jobDetails.projects[1].name,,Order Management
+1001,I,jobDetails.projects[1].status,,in-progress

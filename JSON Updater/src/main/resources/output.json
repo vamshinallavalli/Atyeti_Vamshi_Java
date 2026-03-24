@@ -1,0 +1,28 @@
+{
+  "employeeId" : "1001",
+  "personalInfo" : {
+    "name" : "Arjun Reddy",
+    "age" : 27,
+    "contacts" : [ {
+      "type" : "email",
+      "value" : "arjun.reddy@techmail.com"
+    }, {
+      "type" : "phone",
+      "value" : 9123456780
+    } ]
+  },
+  "jobDetails" : {
+    "department" : "Product",
+    "role" : "Backend Developer",
+    "salary" : 95000,
+    "projects" : [ {
+      "projectId" : "P201",
+      "name" : "Payment Gateway",
+      "status" : "active"
+    }, {
+      "projectId" : "P305",
+      "name" : "Order Management",
+      "status" : "in-progress"
+    } ]
+  }
+}

@@ -7,6 +7,16 @@ Hint:
  */
 public class Scenario7 {
     public static void main(String[] args) {
+        Scenario7 obj=new Scenario7();
 
+        Thread t1=new Thread(()->obj.odd());
+        Thread t2=new Thread(()->obj.even());
+    }
+
+    private void even() {
+
+    }
+
+    private void odd() {
     }
 }
