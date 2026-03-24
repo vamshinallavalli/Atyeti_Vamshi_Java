@@ -1,9 +1,13 @@
 package com.springboot.Learning.Demo.controller;
 
-import com.springboot.Learning.Demo.entities.Priority;
-import com.springboot.Learning.Demo.entities.Status;
-import com.springboot.Learning.Demo.entities.Task;
+import com.springboot.Learning.Demo.dto.TaskDTO;
+import com.springboot.Learning.Demo.entities.*;
+import com.springboot.Learning.Demo.exception.ResourceNotFoundException;
+import com.springboot.Learning.Demo.mapper.Mapper;
+import com.springboot.Learning.Demo.repository.ProjectRepository;
+import com.springboot.Learning.Demo.repository.UserRepository;
 import com.springboot.Learning.Demo.service.TaskService;
+import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,14 +18,25 @@ import java.util.List;
 public class TaskController {
 
     private final TaskService service;
+    private final ProjectRepository projectRepo;
+    private  final UserRepository userRepo;
 
-    public TaskController(TaskService service) {
+    public TaskController(TaskService service, ProjectRepository projectRepo, UserRepository userRepo) {
         this.service = service;
+        this.projectRepo = projectRepo;
+        this.userRepo = userRepo;
     }
 
     @PostMapping
-    public Task create(@RequestBody Task task) {
-        return service.createTask(task);
+    public Task create(@Valid @RequestBody TaskDTO dto) {
+
+        Project project = projectRepo.findById(dto.getProjectId())
+                .orElseThrow(() -> new ResourceNotFoundException("Project not found"));
+
+        User user = userRepo.findById(dto.getAssignedToId())
+                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+
+        return service.createTask(Mapper.toEntity(dto, project, user));
     }
 
     @GetMapping

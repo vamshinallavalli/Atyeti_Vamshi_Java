@@ -1,5 +1,7 @@
 package com.springboot.Learning.Demo.dto;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
