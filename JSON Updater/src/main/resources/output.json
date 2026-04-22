@@ -1,7 +1,7 @@
 {
   "employeeId" : "1001",
   "personalInfo" : {
-    "name" : "Arjun Reddy",
+    "name" : "Anil",
     "age" : 27,
     "contacts" : [ {
       "type" : "email",
